@@ -1,0 +1,2123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+	<title>iProperty</title>
+ 	<meta name="description" content="Description">
+	<meta name="author" content="Create by">
+	<meta name="copyright" content="Create by">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2017-08-08T00:00:00+02:00">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/documenter_style.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+	<style>
+		html, body{background-color:#FFFFFF;color:#383838;}
+		h1,h2,h3,h4,h5,h6{color:#383838;}
+		section table{background-color:#FFFFFF;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		a.brand{background-image:url(assets/images/image_1.png);}
+		a, a:hover, a:active{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		div.navbar-inner, .navbar .nav li ul{background:#DDDDDD;color:#222222;}
+		a.btn-navbar{background:#DDDDDD;color:#222222;}
+		.navbar .nav li a{color:#222222;text-shadow:1px 1px 0px #EEEEEE;}
+		.navbar .nav li a:hover, .navbar .nav li.active a{text-shadow:none;}
+		div.navbar-inner ul{}
+		/*.marketing-byline{color:#FFFFFF;}*/
+		.navbar .nav > li a{color:#444444;}
+		.navbar .nav > li a:hover, a.btn-navbar:hover{background:#444444;color:#DDDDDD;}
+		.navbar .nav .active > a, .navbar .nav .active > a:hover, a.btn-navbar:active{background-color:#444444;color:#DDDDDD;}
+		.navbar .nav li ul li a:hover{background:#444444;color:#DDDDDD;}
+		.navbar .nav li ul li a:active{background:#444444;color:#DDDDDD;}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  background-color: #0044CC;
+		}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+		.navbar a.brand {
+			text-indent: 0;
+		}
+		.navbar a.brand img {
+			margin-top:4px;
+		}
+		.navbar .nav > li {
+			position: relative;
+		}
+		.navbar .nav > li > .dropdown-menu::after {
+			border-bottom: 6px solid #dddddd;
+		}
+		.navbar .nav li a {
+			text-overflow:inherit;
+			overflow:visible;
+		}
+		.navbar .nav li ul,
+		.navbar .nav li ul li a {
+			min-width: 180px;
+		}
+		section table td, section table th {
+			border-bottom: medium none;
+		}
+		.custom-btn-group .btn {
+			margin-bottom:5px;
+		}
+		
+		/* PORTFOLIO FILTER */
+		.btn-group-justified > li {
+			display: table-cell;
+			float: none;
+			width: 1%;
+		}
+		.btn-group li:not(:first-child):not(:last-child):not(.dropdown-toggle) .btn {
+			border-radius: 0;
+		}
+		.btn-group li:first-child:not(:last-child):not(.dropdown-toggle) .btn {
+			border-bottom-right-radius: 0;
+			border-top-right-radius: 0;
+		}
+		.btn-group li:last-child:not(:first-child) .btn,
+		.btn-group li:not(:first-child) .dropdown-toggle {
+			border-bottom-left-radius: 0;
+			border-top-left-radius: 0;
+		}
+		#filterable {
+			list-style: outside none none;
+			margin: 0 0 30px;
+			padding-left: 0;
+		}
+		#filterable > li {
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+		#filterable li.active a {
+			font-weight: 700;
+		}
+		
+		.c-color {
+			color: #0093bf !important;
+		}
+		
+		
+
+		/* MASONRY ISOTOPE */
+		.isotope,
+		.isotope .isotope-item {
+		  /* change duration value to whatever you like */
+		  -webkit-transition-duration: 0.8s;
+			 -moz-transition-duration: 0.8s;
+				  transition-duration: 0.8s;
+		}
+		.isotope {
+		  -webkit-transition-property: height, width;
+			 -moz-transition-property: height, width;
+				  transition-property: height, width;
+		}
+		.isotope .isotope-item {
+		  -webkit-transition-property: -webkit-transform, opacity;
+			 -moz-transition-property:    -moz-transform, opacity;
+				  transition-property:         transform, opacity;
+		}
+		
+		
+		
+		.container-fluid {
+		  margin-right: auto;
+		  margin-left: auto;
+		  padding-left: 15px;
+		  padding-right: 15px;
+		}
+		.row {
+		  margin-left: -15px;
+		  margin-right: -15px;
+		}
+		.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+		  position: relative;
+		  min-height: 1px;
+		  padding-left: 15px;
+		  padding-right: 15px;
+		}
+		.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+		  float: left;
+		}
+		.col-xs-12 {
+		  width: 100%;
+		}
+		.col-xs-11 {
+		  width: 91.66666667%;
+		}
+		.col-xs-10 {
+		  width: 83.33333333%;
+		}
+		.col-xs-9 {
+		  width: 75%;
+		}
+		.col-xs-8 {
+		  width: 66.66666667%;
+		}
+		.col-xs-7 {
+		  width: 58.33333333%;
+		}
+		.col-xs-6 {
+		  width: 50%;
+		}
+		.col-xs-5 {
+		  width: 41.66666667%;
+		}
+		.col-xs-4 {
+		  width: 33.33333333%;
+		}
+		.col-xs-3 {
+		  width: 25%;
+		}
+		.col-xs-2 {
+		  width: 16.66666667%;
+		}
+		.col-xs-1 {
+		  width: 8.33333333%;
+		}
+		.col-xs-pull-12 {
+		  right: 100%;
+		}
+		.col-xs-pull-11 {
+		  right: 91.66666667%;
+		}
+		.col-xs-pull-10 {
+		  right: 83.33333333%;
+		}
+		.col-xs-pull-9 {
+		  right: 75%;
+		}
+		.col-xs-pull-8 {
+		  right: 66.66666667%;
+		}
+		.col-xs-pull-7 {
+		  right: 58.33333333%;
+		}
+		.col-xs-pull-6 {
+		  right: 50%;
+		}
+		.col-xs-pull-5 {
+		  right: 41.66666667%;
+		}
+		.col-xs-pull-4 {
+		  right: 33.33333333%;
+		}
+		.col-xs-pull-3 {
+		  right: 25%;
+		}
+		.col-xs-pull-2 {
+		  right: 16.66666667%;
+		}
+		.col-xs-pull-1 {
+		  right: 8.33333333%;
+		}
+		.col-xs-pull-0 {
+		  right: auto;
+		}
+		.col-xs-push-12 {
+		  left: 100%;
+		}
+		.col-xs-push-11 {
+		  left: 91.66666667%;
+		}
+		.col-xs-push-10 {
+		  left: 83.33333333%;
+		}
+		.col-xs-push-9 {
+		  left: 75%;
+		}
+		.col-xs-push-8 {
+		  left: 66.66666667%;
+		}
+		.col-xs-push-7 {
+		  left: 58.33333333%;
+		}
+		.col-xs-push-6 {
+		  left: 50%;
+		}
+		.col-xs-push-5 {
+		  left: 41.66666667%;
+		}
+		.col-xs-push-4 {
+		  left: 33.33333333%;
+		}
+		.col-xs-push-3 {
+		  left: 25%;
+		}
+		.col-xs-push-2 {
+		  left: 16.66666667%;
+		}
+		.col-xs-push-1 {
+		  left: 8.33333333%;
+		}
+		.col-xs-push-0 {
+		  left: auto;
+		}
+		.col-xs-offset-12 {
+		  margin-left: 100%;
+		}
+		.col-xs-offset-11 {
+		  margin-left: 91.66666667%;
+		}
+		.col-xs-offset-10 {
+		  margin-left: 83.33333333%;
+		}
+		.col-xs-offset-9 {
+		  margin-left: 75%;
+		}
+		.col-xs-offset-8 {
+		  margin-left: 66.66666667%;
+		}
+		.col-xs-offset-7 {
+		  margin-left: 58.33333333%;
+		}
+		.col-xs-offset-6 {
+		  margin-left: 50%;
+		}
+		.col-xs-offset-5 {
+		  margin-left: 41.66666667%;
+		}
+		.col-xs-offset-4 {
+		  margin-left: 33.33333333%;
+		}
+		.col-xs-offset-3 {
+		  margin-left: 25%;
+		}
+		.col-xs-offset-2 {
+		  margin-left: 16.66666667%;
+		}
+		.col-xs-offset-1 {
+		  margin-left: 8.33333333%;
+		}
+		.col-xs-offset-0 {
+		  margin-left: 0%;
+		}
+				@media (min-width: 768px) {
+		  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+		    float: left;
+		  }
+		  .col-sm-12 {
+		    width: 100%;
+		  }
+		  .col-sm-11 {
+		    width: 91.66666667%;
+		  }
+		  .col-sm-10 {
+		    width: 83.33333333%;
+		  }
+		  .col-sm-9 {
+		    width: 75%;
+		  }
+		  .col-sm-8 {
+		    width: 66.66666667%;
+		  }
+		  .col-sm-7 {
+		    width: 58.33333333%;
+		  }
+		  .col-sm-6 {
+		    width: 50%;
+		  }
+		  .col-sm-5 {
+		    width: 41.66666667%;
+		  }
+		  .col-sm-4 {
+		    width: 33.33333333%;
+		  }
+		  .col-sm-3 {
+		    width: 25%;
+		  }
+		  .col-sm-2 {
+		    width: 16.66666667%;
+		  }
+		  .col-sm-1 {
+		    width: 8.33333333%;
+		  }
+		  .col-sm-pull-12 {
+		    right: 100%;
+		  }
+		  .col-sm-pull-11 {
+		    right: 91.66666667%;
+		  }
+		  .col-sm-pull-10 {
+		    right: 83.33333333%;
+		  }
+		  .col-sm-pull-9 {
+		    right: 75%;
+		  }
+		  .col-sm-pull-8 {
+		    right: 66.66666667%;
+		  }
+		  .col-sm-pull-7 {
+		    right: 58.33333333%;
+		  }
+		  .col-sm-pull-6 {
+		    right: 50%;
+		  }
+		  .col-sm-pull-5 {
+		    right: 41.66666667%;
+		  }
+		  .col-sm-pull-4 {
+		    right: 33.33333333%;
+		  }
+		  .col-sm-pull-3 {
+		    right: 25%;
+		  }
+		  .col-sm-pull-2 {
+		    right: 16.66666667%;
+		  }
+		  .col-sm-pull-1 {
+		    right: 8.33333333%;
+		  }
+		  .col-sm-pull-0 {
+		    right: auto;
+		  }
+		  .col-sm-push-12 {
+		    left: 100%;
+		  }
+		  .col-sm-push-11 {
+		    left: 91.66666667%;
+		  }
+		  .col-sm-push-10 {
+		    left: 83.33333333%;
+		  }
+		  .col-sm-push-9 {
+		    left: 75%;
+		  }
+		  .col-sm-push-8 {
+		    left: 66.66666667%;
+		  }
+		  .col-sm-push-7 {
+		    left: 58.33333333%;
+		  }
+		  .col-sm-push-6 {
+		    left: 50%;
+		  }
+		  .col-sm-push-5 {
+		    left: 41.66666667%;
+		  }
+		  .col-sm-push-4 {
+		    left: 33.33333333%;
+		  }
+		  .col-sm-push-3 {
+		    left: 25%;
+		  }
+		  .col-sm-push-2 {
+		    left: 16.66666667%;
+		  }
+		  .col-sm-push-1 {
+		    left: 8.33333333%;
+		  }
+		  .col-sm-push-0 {
+		    left: auto;
+		  }
+		  .col-sm-offset-12 {
+		    margin-left: 100%;
+		  }
+		  .col-sm-offset-11 {
+		    margin-left: 91.66666667%;
+		  }
+		  .col-sm-offset-10 {
+		    margin-left: 83.33333333%;
+		  }
+		  .col-sm-offset-9 {
+		    margin-left: 75%;
+		  }
+		  .col-sm-offset-8 {
+		    margin-left: 66.66666667%;
+		  }
+		  .col-sm-offset-7 {
+		    margin-left: 58.33333333%;
+		  }
+		  .col-sm-offset-6 {
+		    margin-left: 50%;
+		  }
+		  .col-sm-offset-5 {
+		    margin-left: 41.66666667%;
+		  }
+		  .col-sm-offset-4 {
+		    margin-left: 33.33333333%;
+		  }
+		  .col-sm-offset-3 {
+		    margin-left: 25%;
+		  }
+		  .col-sm-offset-2 {
+		    margin-left: 16.66666667%;
+		  }
+		  .col-sm-offset-1 {
+		    margin-left: 8.33333333%;
+		  }
+		  .col-sm-offset-0 {
+		    margin-left: 0%;
+		  }
+		}
+		@media (min-width: 992px) {
+		  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+			float: left;
+		  }
+		  .col-md-12 {
+			width: 100%;
+		  }
+		  .col-md-11 {
+			width: 91.66666667%;
+		  }
+		  .col-md-10 {
+			width: 83.33333333%;
+		  }
+		  .col-md-9 {
+			width: 75%;
+		  }
+		  .col-md-8 {
+			width: 66.66666667%;
+		  }
+		  .col-md-7 {
+			width: 58.33333333%;
+		  }
+		  .col-md-6 {
+			width: 50%;
+		  }
+		  .col-md-5 {
+			width: 41.66666667%;
+		  }
+		  .col-md-4 {
+			width: 33.33333333%;
+		  }
+		  .col-md-3 {
+			width: 25%;
+		  }
+		  .col-md-2 {
+			width: 16.66666667%;
+		  }
+		  .col-md-1 {
+			width: 8.33333333%;
+		  }
+		  .col-md-pull-12 {
+			right: 100%;
+		  }
+		  .col-md-pull-11 {
+			right: 91.66666667%;
+		  }
+		  .col-md-pull-10 {
+			right: 83.33333333%;
+		  }
+		  .col-md-pull-9 {
+			right: 75%;
+		  }
+		  .col-md-pull-8 {
+			right: 66.66666667%;
+		  }
+		  .col-md-pull-7 {
+			right: 58.33333333%;
+		  }
+		  .col-md-pull-6 {
+			right: 50%;
+		  }
+		  .col-md-pull-5 {
+			right: 41.66666667%;
+		  }
+		  .col-md-pull-4 {
+			right: 33.33333333%;
+		  }
+		  .col-md-pull-3 {
+			right: 25%;
+		  }
+		  .col-md-pull-2 {
+			right: 16.66666667%;
+		  }
+		  .col-md-pull-1 {
+			right: 8.33333333%;
+		  }
+		  .col-md-pull-0 {
+			right: auto;
+		  }
+		  .col-md-push-12 {
+			left: 100%;
+		  }
+		  .col-md-push-11 {
+			left: 91.66666667%;
+		  }
+		  .col-md-push-10 {
+			left: 83.33333333%;
+		  }
+		  .col-md-push-9 {
+			left: 75%;
+		  }
+		  .col-md-push-8 {
+			left: 66.66666667%;
+		  }
+		  .col-md-push-7 {
+			left: 58.33333333%;
+		  }
+		  .col-md-push-6 {
+			left: 50%;
+		  }
+		  .col-md-push-5 {
+			left: 41.66666667%;
+		  }
+		  .col-md-push-4 {
+			left: 33.33333333%;
+		  }
+		  .col-md-push-3 {
+			left: 25%;
+		  }
+		  .col-md-push-2 {
+			left: 16.66666667%;
+		  }
+		  .col-md-push-1 {
+			left: 8.33333333%;
+		  }
+		  .col-md-push-0 {
+			left: auto;
+		  }
+		  .col-md-offset-12 {
+			margin-left: 100%;
+		  }
+		  .col-md-offset-11 {
+			margin-left: 91.66666667%;
+		  }
+		  .col-md-offset-10 {
+			margin-left: 83.33333333%;
+		  }
+		  .col-md-offset-9 {
+			margin-left: 75%;
+		  }
+		  .col-md-offset-8 {
+			margin-left: 66.66666667%;
+		  }
+		  .col-md-offset-7 {
+			margin-left: 58.33333333%;
+		  }
+		  .col-md-offset-6 {
+			margin-left: 50%;
+		  }
+		  .col-md-offset-5 {
+			margin-left: 41.66666667%;
+		  }
+		  .col-md-offset-4 {
+			margin-left: 33.33333333%;
+		  }
+		  .col-md-offset-3 {
+			margin-left: 25%;
+		  }
+		  .col-md-offset-2 {
+			margin-left: 16.66666667%;
+		  }
+		  .col-md-offset-1 {
+			margin-left: 8.33333333%;
+		  }
+		  .col-md-offset-0 {
+			margin-left: 0%;
+		  }
+		}
+		@media (min-width: 1200px) {
+		  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+			float: left;
+		  }
+		  .col-lg-12 {
+			width: 100%;
+		  }
+		  .col-lg-11 {
+			width: 91.66666667%;
+		  }
+		  .col-lg-10 {
+			width: 83.33333333%;
+		  }
+		  .col-lg-9 {
+			width: 75%;
+		  }
+		  .col-lg-8 {
+			width: 66.66666667%;
+		  }
+		  .col-lg-7 {
+			width: 58.33333333%;
+		  }
+		  .col-lg-6 {
+			width: 50%;
+		  }
+		  .col-lg-5 {
+			width: 41.66666667%;
+		  }
+		  .col-lg-4 {
+			width: 33.33333333%;
+		  }
+		  .col-lg-3 {
+			width: 25%;
+		  }
+		  .col-lg-2 {
+			width: 16.66666667%;
+		  }
+		  .col-lg-1 {
+			width: 8.33333333%;
+		  }
+		  .col-lg-pull-12 {
+			right: 100%;
+		  }
+		  .col-lg-pull-11 {
+			right: 91.66666667%;
+		  }
+		  .col-lg-pull-10 {
+			right: 83.33333333%;
+		  }
+		  .col-lg-pull-9 {
+			right: 75%;
+		  }
+		  .col-lg-pull-8 {
+			right: 66.66666667%;
+		  }
+		  .col-lg-pull-7 {
+			right: 58.33333333%;
+		  }
+		  .col-lg-pull-6 {
+			right: 50%;
+		  }
+		  .col-lg-pull-5 {
+			right: 41.66666667%;
+		  }
+		  .col-lg-pull-4 {
+			right: 33.33333333%;
+		  }
+		  .col-lg-pull-3 {
+			right: 25%;
+		  }
+		  .col-lg-pull-2 {
+			right: 16.66666667%;
+		  }
+		  .col-lg-pull-1 {
+			right: 8.33333333%;
+		  }
+		  .col-lg-pull-0 {
+			right: auto;
+		  }
+		  .col-lg-push-12 {
+			left: 100%;
+		  }
+		  .col-lg-push-11 {
+			left: 91.66666667%;
+		  }
+		  .col-lg-push-10 {
+			left: 83.33333333%;
+		  }
+		  .col-lg-push-9 {
+			left: 75%;
+		  }
+		  .col-lg-push-8 {
+			left: 66.66666667%;
+		  }
+		  .col-lg-push-7 {
+			left: 58.33333333%;
+		  }
+		  .col-lg-push-6 {
+			left: 50%;
+		  }
+		  .col-lg-push-5 {
+			left: 41.66666667%;
+		  }
+		  .col-lg-push-4 {
+			left: 33.33333333%;
+		  }
+		  .col-lg-push-3 {
+			left: 25%;
+		  }
+		  .col-lg-push-2 {
+			left: 16.66666667%;
+		  }
+		  .col-lg-push-1 {
+			left: 8.33333333%;
+		  }
+		  .col-lg-push-0 {
+			left: auto;
+		  }
+		  .col-lg-offset-12 {
+			margin-left: 100%;
+		  }
+		  .col-lg-offset-11 {
+			margin-left: 91.66666667%;
+		  }
+		  .col-lg-offset-10 {
+			margin-left: 83.33333333%;
+		  }
+		  .col-lg-offset-9 {
+			margin-left: 75%;
+		  }
+		  .col-lg-offset-8 {
+			margin-left: 66.66666667%;
+		  }
+		  .col-lg-offset-7 {
+			margin-left: 58.33333333%;
+		  }
+		  .col-lg-offset-6 {
+			margin-left: 50%;
+		  }
+		  .col-lg-offset-5 {
+			margin-left: 41.66666667%;
+		  }
+		  .col-lg-offset-4 {
+			margin-left: 33.33333333%;
+		  }
+		  .col-lg-offset-3 {
+			margin-left: 25%;
+		  }
+		  .col-lg-offset-2 {
+			margin-left: 16.66666667%;
+		  }
+		  .col-lg-offset-1 {
+			margin-left: 8.33333333%;
+		  }
+		  .col-lg-offset-0 {
+			margin-left: 0%;
+		  }
+		}
+	</style>
+	
+    </head>
+    
+<body class="documenter-project-item-name" data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container"> 
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+			<a class="brand" href="index.html"><img width="110" src="assets/img/logo.png"></a>
+			<div class="nav-collapse">
+			<ul class="nav">
+				
+			<li><a href="#add_section_1" title="File Structure">File Structure</a></li>
+				
+			<li><a href="#add_section_5" title="Files Required">Files Required</a></li>
+				
+			<li><a href="#add_section_2" title="HTML Structure">HTML Structure</a></li>
+
+			<li><a href="#add_section_6" title="Features">Features</a></li>
+
+			<li><a href="#add_section_7" title="Utility">Utility</a></li>
+				
+			<li><a href="#add_section_3" title="Credits">Credits</a></li>
+				
+			<li><a href="#add_section_4" title="Tips">Tips</a></li>
+
+			<li><a href="#add_section_8" title="Updates">Updates</a></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->			
+			
+<div class="container" id="documenter_content">
+    
+	<div id=""> <!-- id: documenter-cover -->
+	<div class="masthead">
+	    <h4 class="m-bottom-0">Version - <span style="font-weight:400;">1.1</span></h4>
+	    <h1 class="m-top-10">iProperty - <span style="font-weight:400;">Documentation</span></h1>
+	    <ul class="marketing-byline">
+			<li><strong>Created:</strong> 12/16/2017</li>
+			<li><strong>Create By:</strong></li>
+			<li><a href="https://wrapbootstrap.com/user/makbar" target="_blank">immersivesoul</a></li>
+		</ul>		
+	</div> <!-- masthead -->
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<section id="add_section_1" style="padding-top: 30px;">
+	<div class="page-header"><h3>File Structure</h3><hr class="notop"></div>
+	
+	<p>Follow the steps below to get started with your Site Template:</p>
+
+	<ul class="list-unstyled">
+		<li>Open the <code>iProperty/HTML</code> Folder to find all HTML Files</li>
+		<li>Make sure you are using the Required Files / Folders listed below:
+			<ul>
+				<li><code>HTML/assets/css</code></li>
+				<li><code>HTML/assets/fonts</code></li>
+				<li><code>HTML/assets/images</code></li>
+				<li><code>HTML/assets/js</code></li>
+				<li><code>HTML/assets/vendors</code></li>
+			</ul>
+			The other Files can be used according to your preferences.
+		</li>
+		<li>You're now good to go..! Start creating website with iProperty.</li>
+	</ul>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<section id="add_section_5" style="padding-top: 30px;">
+	<div class="page-header"><h3>Files Required</h3><hr class="notop"></div>
+	
+	<p>These files are required for website:</p>
+
+	<ul class="list-unstyled">
+		<ul>
+			<li>Add these CSS files in Head Tag.</li>
+			<li><code>assets/css/bootstrap.min.css</code></li>
+			<li><code>assets/css/main.css</code></li>
+			<li><code>assets/css/utility.css</code></li>
+			<li><code>assets/css/responsive.css</code></li>
+			<li><code>assets/vendors/menu/css/bootstrap-extended.css</code></li>
+
+			<li style="margin-top: 15px; font-size: 12px;">-- THEME COLOR (you can choose your color scheme from below colors) --</li>
+			<li><code>assets/css/colors/alphagreen.css</code></li>
+			<li><code>assets/css/colors/autumn.css</code></li>
+			<li><code>assets/css/colors/blue.css</code></li>
+			<li><code>assets/css/colors/cherry.css</code></li>
+			<li><code>assets/css/colors/golden.css</code></li>
+			<li><code>assets/css/colors/limegreen.css</code></li>
+			<li><code>assets/css/colors/orange.css</code></li>
+			<li><code>assets/css/colors/pink.css</code></li>
+			<li><code>assets/css/colors/purple.css</code></li>
+			<li><code>assets/css/colors/skyblue.css</code></li>
+
+			<li style="margin-top: 15px; font-size: 12px;">-- OWL CAROUSEL SLIDER --</li>
+			<li><code>assets/vendors/owl.carousel/css/owl.carousel.min.css</code></li>
+			<li style="margin-top: 15px; font-size: 12px;">-- SLICK SLIDER --</li>
+			<li><code>assets/vendors/slick/slick.css</code></li>
+			<li><code>assets/vendors/slick/slick-theme.css</code></li>
+			<li style="margin-top: 15px; font-size: 12px;">-- FANCY BOX --</li>
+			<li><code>assets/vendors/fancybox/jquery.fancybox.min.css</code></li>
+			<li style="margin-top: 15px; font-size: 12px;">-- FILE-UPLOADER --</li>
+			<li><code>assets/vendors/fileuploader/css/jquery.fileuploader.css</code></li>
+			<li style="margin-bottom: 30px;"><code>assets/vendors/fileuploader/css/jquery.fileuploader-theme-thumbnails.css</code></li>
+
+			<li>Add these JS files bottom of your HTML page.</li>
+			<li><code>assets/js/jquery.min.js</code></li>
+			<li><code>assets/js/popper.min.js</code></li>
+			<li><code>assets/vendors/appear/jquery.appear.min.js</code></li>
+			<li><code>assets/vendors/jquery.easing/jquery.easing.min.js</code></li>
+			<li><code>assets/js/tether.min.js</code></li>
+			<li><code>assets/js/bootstrap.min.js</code></li>
+			<li><code>assets/vendors/common/common.min.js</code></li>
+			<li><code>assets/vendors/menu/js/vendors-menu.min.js</code></li>
+			<li><code>assets/vendors/menu/js/jquery.sticky.js</code></li>
+			<li><code>assets/vendors/menu/js/app-menu.js</code></li>
+			<li style="margin-top: 15px; font-size: 12px;">-- MAP --</li>
+			<li><code>assets/vendors/gmap/jquery.axgmap.js</code></li>
+			<li style="margin-top: 15px; font-size: 12px;">-- MASONRY --</li>
+			<li><code>assets/vendors/isotope/jquery.isotope.min.js</code></li>
+			<li style="margin-top: 15px; font-size: 12px;">-- OWL CAROUSEL SLIDER --</li>
+			<li><code>assets/vendors/owl.carousel/js/owl.carousel.min.js</code></li>
+			<li style="margin-top: 15px; font-size: 12px;">-- SILCK SLIDER --</li>
+			<li><code>assets/vendors/slick/slick.js</code></li>
+			<li style="margin-top: 15px; font-size: 12px;">-- FANCY BOX --</li>
+			<li><code>assets/vendors/fancybox/jquery.fancybox.min.js</code></li>
+			<li style="margin-top: 15px; font-size: 12px;">-- FILE-UPLOADER --</li>
+			<li><code>assets/vendors/fileuploader/js/jquery.fileuploader.min.js</code></li>
+			<li><code>assets/vendors/fileuploader/js/custom.js</code></li>
+			<li style="margin-top: 15px; font-size: 12px;">-- THEME-CUSTOM --</li>
+			<li><code>assets/js/main.js</code></li>
+			<li style="margin-top: 15px; font-size: 12px;">-- THEME-INITIALIZATION-FILES --</li>
+			<li><code>assets/js/theme.init.js</code></li>
+		</ul>
+	</ul>
+</section>
+
+
+	
+<section id="add_section_2" style="padding-top: 30px;">
+<div class="page-header"><h3>HTML Structure</h3><hr class="notop">
+<p>All CSS and JS files included in below code.</p>
+	</div>
+
+<pre class="nobottommargin" style="height: 300px; overflow: auto;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --&gt;
+    &lt;title&gt;iProperty&lt;/title&gt;
+
+    &lt;link rel=&quot;icon&quot; href=&quot;assets/images/favicon.png&quot; type=&quot;image/png&quot;&gt;
+
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic,300,300italic&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Varela+Round&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/bootstrap.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/main.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/utility.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/responsive.css&quot;&gt;
+
+    &lt;!-- MAIN MENU --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendors/menu/css/bootstrap-extended.css&quot;&gt;
+
+    &lt;!-- OWL CAROUSEL SLIDER --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendors/owl.carousel/css/owl.carousel.min.css&quot;&gt;
+
+    &lt;!-- SLICK SLIDER --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendors/slick/slick.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendors/slick/slick-theme.css&quot;&gt;
+
+    &lt;!-- FANCY BOX --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendors/fancybox/jquery.fancybox.min.css&quot;&gt;
+
+    &lt;!-- FILE-UPLOADER --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/vendors/fileuploader/css/jquery.fileuploader.css&quot; media=&quot;all&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/vendors/fileuploader/css/jquery.fileuploader-theme-thumbnails.css&quot; media=&quot;all&quot;&gt;
+
+    &lt;!-- Begin: HTML5SHIV FOR IE8 --&gt;
+    &lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&gt;
+    &lt;!--[if lt IE 9]&gt;
+      &lt;script src=&quot;assets/js/html5shiv.min.js&quot;&gt;&lt;/script&gt;
+      &lt;script src=&quot;assets/js/respond.min.js&quot;&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+    &lt;!-- end: HTML5SHIV FOR IE8 --&gt;
+&lt;/head&gt;
+
+&lt;body data-menu=&quot;header-main-menu&quot; class=&quot;bg-white body-main-menu header-main-menu&quot;&gt;
+
+    &lt;!--
+    #################################
+        - Begin: HEADER -
+    #################################
+    --&gt;
+    &lt;header class=&quot;main-header bg-light-2 box-shadow-1&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link nav-menu-main menu-toggle btn btn-base rounded-0&quot;&gt;
+            &lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;div class=&quot;inner-header d-flex align-items-center&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-2 col-md-3 col-sm-4 col-xs-2&quot;&gt;
+                        &lt;!-- Begin: LOGO --&gt;
+                        &lt;a class=&quot;navbar-brand logo&quot; href=&quot;index.php&quot;&gt;
+                            &lt;img class=&quot;full-width max-width-130-sm&quot; src=&quot;assets/images/logo.png&quot;&gt;
+                        &lt;/a&gt;
+                        &lt;!-- End: LOGO --&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-lg-10 col-md-9 col-sm-8 text-right&quot;&gt;
+                        &lt;div class=&quot;extra-info&quot;&gt;
+                            &lt;ul&gt;
+                                &lt;li class=&quot;hidden-xs hidden-sm hidden-md&quot;&gt;
+                                    &lt;i class=&quot;fa fa-phone text-base text-size-30&quot;&gt;&lt;/i&gt;
+                                    &lt;div class=&quot;text&quot;&gt;
+                                        &lt;div class=&quot;text-top text-weight-400 text-muted text-size-13&quot;&gt;
+                                            CALL US
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;text-bottom text-bold-700 text-black&quot;&gt;
+                                            (123) 456 7890
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;hidden-xs hidden-sm hidden-md&quot;&gt;
+                                    &lt;i class=&quot;fa fa-envelope-o text-base text-size-30&quot;&gt;&lt;/i&gt;
+                                    &lt;div class=&quot;text&quot;&gt;
+                                        &lt;div class=&quot;text-top text-bold-400 text-muted text-size-13&quot;&gt;
+                                            EMAIL US
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;text-bottom text-bold-700 text-black&quot;&gt;
+                                            info@iproperty.com
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;hidden-xs hidden-sm hidden-md&quot;&gt;
+                                    &lt;i class=&quot;fa fa-clock-o text-base text-size-30&quot;&gt;&lt;/i&gt;
+                                    &lt;div class=&quot;text&quot;&gt;
+                                        &lt;div class=&quot;text-top text-bold-400 text-muted text-size-13&quot;&gt;
+                                            WE'ARE OPEN
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;text-bottom text-bold-700 text-black&quot;&gt;
+                                            Mon - Sat, 10AM to 6PM
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;hidden-xs hidden-sm&quot;&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn-base rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 p-top-12 p-bottom-12 p-left-15 p-right-15 text-size-11-lg&quot;&gt;Submit Property&lt;/a&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Horizontal navigation--&gt;
+        &lt;div role=&quot;navigation&quot; data-menu=&quot;menu-wrapper&quot; class=&quot;header-navbar navbar navbar-fixed navbar-dark box-shadow-3&quot;&gt;
+            
+            &lt;!-- Horizontal menu content--&gt;
+            &lt;div data-menu=&quot;menu-container&quot; class=&quot;container navbar-container main-menu-content&quot;&gt;
+
+                &lt;ul id=&quot;main-menu-navigation&quot; data-menu=&quot;menu-navigation&quot; class=&quot;nav navbar-nav&quot;&gt;
+                    &lt;li class=&quot;nav-item&quot;&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;&lt;i class=&quot;fa fa-cogs&quot;&gt;&lt;/i&gt; &lt;span&gt;Home&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-item&quot;&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;&lt;i class=&quot;fa fa-cogs&quot;&gt;&lt;/i&gt; &lt;span&gt;About Us&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-item&quot;&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;&lt;i class=&quot;fa fa-cogs&quot;&gt;&lt;/i&gt; &lt;span&gt;Properties&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-item&quot;&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;&lt;i class=&quot;fa fa-cogs&quot;&gt;&lt;/i&gt; &lt;span&gt;Agents&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;nav-item&quot;&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;&lt;i class=&quot;fa fa-cogs&quot;&gt;&lt;/i&gt; &lt;span&gt;Contact Us&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+
+            &lt;/div&gt;
+            &lt;!-- /horizontal menu content--&gt;
+
+        &lt;/div&gt;
+        &lt;!-- Horizontal navigation--&gt;
+
+    &lt;/header&gt;
+    &lt;!-- End: HEADER -
+    ################################################################## --&gt;
+
+    &lt;!--
+    #################################
+        - Begin: PAGE CONTENT -
+    #################################
+    --&gt;
+    &lt;div class=&quot;bg-white p-top-80 p-bottom-80&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-md-12&quot;&gt;
+                    
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum, tellus vehicula gravida imperdiet, turpis sapien tempus tortor, imperdiet placerat sapien lorem at velit. Nulla id ultricies tellus, a rhoncus leo. Vivamus odio nisi, vestibulum a augue vitae, eleifend posuere elit. Nulla facilisi. Etiam sapien ante, tincidunt quis sodales ac, ultrices non ligula. Ut in massa malesuada, cursus augue eu, venenatis mauris. Quisque faucibus nulla dui. In quis malesuada nulla.&lt;/p&gt;
+
+                    &lt;p&gt;Aliquam eget enim arcu. Vestibulum luctus posuere nibh ut ultricies. Praesent faucibus rhoncus urna vitae maximus. Proin id aliquam sapien, ut fermentum tortor. In in pulvinar nisi. Nunc efficitur vulputate dictum. Integer ipsum diam, varius sit amet pellentesque lobortis, eleifend quis tellus. Pellentesque a imperdiet nisi. Ut aliquam odio risus, scelerisque suscipit quam faucibus et. Nam ut sodales metus, eget imperdiet erat. Nunc pharetra dictum diam sed fermentum. Maecenas a pellentesque sem, sit amet accumsan mi. Integer dapibus ultricies dapibus. Vestibulum non enim venenatis, rhoncus orci eu, semper nulla.&lt;/p&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- End: PAGE CONTENT -
+    ################################################################## --&gt;
+
+    &lt;!--
+    #################################
+        - Begin: FOOTER -
+    #################################
+    --&gt;
+    &lt;footer class=&quot;footer&quot;&gt;
+        &lt;div class=&quot;bg-dark p-top-60 p-bottom-30&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                    &lt;div class=&quot;col-md-12&quot;&gt;
+                        &lt;div class=&quot;border-1 border-solid border-dark border-top-0 border-left-0 border-right-0 p-bottom-40 m-bottom-40&quot;&gt;
+                            
+                            &lt;div class=&quot;row&quot;&gt;
+                                
+                                &lt;div class=&quot;col-md-6&quot;&gt;
+                                    &lt;!-- Begin: LOGO --&gt;
+                                    &lt;a class=&quot;navbar-brand logo&quot; href=&quot;index.php&quot;&gt;
+                                        &lt;img class=&quot;full-width max-width-140 m-right-10&quot; src=&quot;assets/images/logo-white.png&quot;&gt;
+                                    &lt;/a&gt;
+                                    &lt;span class=&quot;text-white&quot;&gt;/ Real Buying Selling Property House&lt;/span&gt;
+                                    &lt;!-- End: LOGO --&gt;
+                                &lt;/div&gt;
+                                
+                                &lt;div class=&quot;col-md-6&quot;&gt;
+                                    &lt;!-- Begin: SOCIAL --&gt;
+                                    &lt;ul class=&quot;social-icons m-top-15 text-right&quot;&gt;
+                                        &lt;li&gt;
+                                            &lt;a class=&quot;btn btn-base rounded-0&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;a class=&quot;btn btn-base rounded-0&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;a class=&quot;btn btn-base rounded-0&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;a class=&quot;btn btn-base rounded-0&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;a class=&quot;btn btn-base rounded-0&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                    &lt;!-- End: SOCIAL --&gt;
+                                &lt;/div&gt;
+
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+                
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                    &lt;div class=&quot;col-lg-4 col-md-6&quot;&gt;
+                        &lt;div class=&quot;m-bottom-30&quot;&gt;
+                            
+                            &lt;h5 class=&quot;text-bold-700 m-bottom-30 text-white text-uppercase&quot;&gt;Recently Viewed&lt;/h5&gt;
+
+                            &lt;div class=&quot;row&quot;&gt;
+                                &lt;div class=&quot;col-md-12&quot;&gt;
+
+                                    &lt;ul class=&quot;media-list&quot;&gt;
+                                        &lt;li&gt;
+                                            &lt;img alt=&quot;...&quot; class=&quot;media-img&quot; src=&quot;assets/images/property/property-1-150x130.jpg&quot;&gt;
+                                            &lt;div class=&quot;media-content&quot;&gt;
+                                                &lt;h5 class=&quot;text-bold-700 text-base&quot;&gt;$250,000&lt;/h5&gt;
+                                                &lt;h6&gt;&lt;a class=&quot;text-white text-base-hover&quot; href=&quot;#&quot;&gt;Beautiful Small Apartment&lt;/a&gt;&lt;/h6&gt;
+                                                &lt;p class=&quot;address text-muted&quot;&gt;253 Lake Washington, USA&lt;/p&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;img alt=&quot;...&quot; class=&quot;media-img&quot; src=&quot;assets/images/property/property-2-150x130.jpg&quot;&gt;
+                                            &lt;div class=&quot;media-content&quot;&gt;
+                                                &lt;h5 class=&quot;text-bold-700 text-base&quot;&gt;$120,000&lt;/h5&gt;
+                                                &lt;h6&gt;&lt;a class=&quot;text-white text-base-hover&quot; href=&quot;#&quot;&gt;Beautiful Garaes Condo&lt;/a&gt;&lt;/h6&gt;
+                                                &lt;p class=&quot;address text-muted&quot;&gt;154 Drive, New York&lt;/p&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;img alt=&quot;...&quot; class=&quot;media-img&quot; src=&quot;assets/images/property/property-3-150x130.jpg&quot;&gt;
+                                            &lt;div class=&quot;media-content&quot;&gt;
+                                                &lt;h5 class=&quot;text-bold-700 text-base&quot;&gt;$145,000&lt;/h5&gt;
+                                                &lt;h6&gt;&lt;a class=&quot;text-white text-base-hover&quot; href=&quot;#&quot;&gt;Global Land House&lt;/a&gt;&lt;/h6&gt;
+                                                &lt;p class=&quot;address text-muted&quot;&gt;110 Lake, United Kingdom&lt;/p&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class=&quot;col-lg-4 col-md-6&quot;&gt;
+                        &lt;div class=&quot;m-bottom-30&quot;&gt;
+                            
+                            &lt;h5 class=&quot;text-bold-700 m-bottom-26 text-white text-uppercase&quot;&gt;Popular Countries&lt;/h5&gt;
+
+                            &lt;div class=&quot;row&quot;&gt;
+                                &lt;div class=&quot;col-lg-12 col-md-12&quot;&gt;
+
+                                    &lt;ul class=&quot;icon-list m-bottom-20&quot;&gt;
+                                        &lt;li&gt;
+                                            &lt;i class=&quot;btn btn-base fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                                            &lt;a class=&quot;text-white text-base-hover&quot; href=&quot;#&quot;&gt;France&lt;/a&gt;
+                                            &lt;span class=&quot;text-base float-right&quot;&gt;(10)&lt;/span&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;i class=&quot;btn btn-base fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                                            &lt;a class=&quot;text-white text-base-hover&quot; href=&quot;#&quot;&gt;United States&lt;/a&gt;
+                                            &lt;span class=&quot;text-base float-right&quot;&gt;(20)&lt;/span&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;i class=&quot;btn btn-base fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                                            &lt;a class=&quot;text-white text-base-hover&quot; href=&quot;#&quot;&gt;China&lt;/a&gt;
+                                            &lt;span class=&quot;text-base float-right&quot;&gt;(12)&lt;/span&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;i class=&quot;btn btn-base fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                                            &lt;a class=&quot;text-white text-base-hover&quot; href=&quot;#&quot;&gt;Spain&lt;/a&gt;
+                                            &lt;span class=&quot;text-base float-right&quot;&gt;(15)&lt;/span&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;i class=&quot;btn btn-base fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                                            &lt;a class=&quot;text-white text-base-hover&quot; href=&quot;#&quot;&gt;Poland&lt;/a&gt;
+                                            &lt;span class=&quot;text-base float-right&quot;&gt;(25)&lt;/span&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;i class=&quot;btn btn-base fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                                            &lt;a class=&quot;text-white text-base-hover&quot; href=&quot;#&quot;&gt;Italy&lt;/a&gt;
+                                            &lt;span class=&quot;text-base float-right&quot;&gt;(10)&lt;/span&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;i class=&quot;btn btn-base fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                                            &lt;a class=&quot;text-white text-base-hover&quot; href=&quot;#&quot;&gt;Turkey&lt;/a&gt;
+                                            &lt;span class=&quot;text-base float-right&quot;&gt;(20)&lt;/span&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;i class=&quot;btn btn-base fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                                            &lt;a class=&quot;text-white text-base-hover&quot; href=&quot;#&quot;&gt;United Kingdom&lt;/a&gt;
+                                            &lt;span class=&quot;text-base float-right&quot;&gt;(12)&lt;/span&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;i class=&quot;btn btn-base fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                                            &lt;a class=&quot;text-white text-base-hover&quot; href=&quot;#&quot;&gt;Germany&lt;/a&gt;
+                                            &lt;span class=&quot;text-base float-right&quot;&gt;(15)&lt;/span&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;i class=&quot;btn btn-base fa fa-angle-double-right&quot;&gt;&lt;/i&gt;
+                                            &lt;a class=&quot;text-white text-base-hover&quot; href=&quot;#&quot;&gt;Singapore&lt;/a&gt;
+                                            &lt;span class=&quot;text-base float-right&quot;&gt;(25)&lt;/span&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class=&quot;col-lg-4 col-md-12&quot;&gt;
+                        &lt;div class=&quot;m-bottom-30&quot;&gt;
+                            
+                            &lt;div class=&quot;row&quot;&gt;
+
+                                &lt;div class=&quot;col-lg-12 col-md-6&quot;&gt;
+                                    &lt;h5 class=&quot;text-bold-700 m-bottom-30 text-white text-uppercase&quot;&gt;Contact Us&lt;/h5&gt;
+
+                                    &lt;div class=&quot;row m-bottom-20&quot;&gt;
+                                        &lt;div class=&quot;col-md-12&quot;&gt;
+                                            
+                                            &lt;p class=&quot;text-white&quot;&gt;Address: 253 Lake Washington, USA&lt;/p&gt;
+                                            &lt;p class=&quot;text-white&quot;&gt;Phone: (123) 123-456&lt;/p&gt;
+                                            &lt;p class=&quot;text-white&quot;&gt;E-Mail: &lt;a class=&quot;text-base border-1 border-dotted border-light border-top-0 border-left-0 border-right-0&quot; href=&quot;#&quot;&gt;office@example.com&lt;/a&gt;&lt;/p&gt;
+
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class=&quot;col-lg-12 col-md-6&quot;&gt;
+                                    
+                                    &lt;h5 class=&quot;text-bold-700 m-bottom-30 text-white text-uppercase&quot;&gt;Newsletter&lt;/h5&gt;
+
+                                    &lt;div class=&quot;row m-bottom-20&quot;&gt;
+                                        &lt;div class=&quot;col-md-12&quot;&gt;
+                                            
+                                            &lt;form&gt;
+                                                &lt;div class=&quot;form-group&quot;&gt;
+                                                    &lt;div class=&quot;input-group&quot;&gt;
+                                                        &lt;input type=&quot;email&quot; class=&quot;form-control form-control-lg rounded-0 bg-white text-size-14&quot; placeholder=&quot;Enter your email&quot;&gt;
+                                                        &lt;button type=&quot;submit&quot; class=&quot;input-group-addon btn btn-base rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13  p-top-12 p-bottom-12 p-left-20 p-right-20&quot;&gt;&lt;i class=&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;p class=&quot;text-muted&quot;&gt;Subscribe to our newsletter and we will inform you about newset projects and promotions&lt;/p&gt;
+                                            &lt;/form&gt;
+
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;bg-base p-top-30 p-bottom-20&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;p class=&quot;text-white m-bottom-6&quot;&gt;&copy; Copyright 2017 &lt;a class=&quot;text-white border-1 border-dotted border-light border-top-0 border-left-0 border-right-0&quot; href=&quot;index.html&quot;&gt;iProperty&lt;/a&gt;. All Rights Reserved.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;!-- End: FOOTER -
+    ################################################################## --&gt;
+
+    &lt;!-- jQuery (necessary for Bootstrap's JavaScript plugins) --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/popper.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/vendors/appear/jquery.appear.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/vendors/jquery.easing/jquery.easing.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/tether.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/vendors/common/common.min.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- MAIN MENU --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/vendors/menu/js/vendors-menu.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/vendors/menu/js/jquery.sticky.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/vendors/menu/js/app-menu.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- MAP --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/vendors/gmap/jquery.axgmap.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- MASONRY --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/vendors/isotope/jquery.isotope.min.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- OWL CAROUSEL SLIDER --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/vendors/owl.carousel/js/owl.carousel.min.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- SILCK SLIDER --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/vendors/slick/slick.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- FANCY BOX --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/vendors/fancybox/jquery.fancybox.min.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- FILE-UPLOADER --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/vendors/fileuploader/js/jquery.fileuploader.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/vendors/fileuploader/js/custom.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- THEME-CUSTOM --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/main.js&quot;&gt;&lt;/script&gt;
+    
+    &lt;!-- THEME-INITIALIZATION-FILES --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/theme.init.js&quot;&gt;&lt;/script&gt;
+
+    &lt;script type=&quot;text/javascript&quot; src=&quot;https://maps.googleapis.com/maps/api/js?key=AIzaSyAhpYHdYRY2U6V_VfyyNtkPHhywLjDkhfg&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        // Markers
+        $(&quot;#googlemapsMarkers&quot;).gMap({
+            controls: {
+                draggable: (($.browser.mobile) ? false : true),
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: true,
+                scaleControl: true,
+                streetViewControl: true,
+                overviewMapControl: true
+            },
+            scrollwheel: false,
+            markers: [{
+                address: &quot;217 Summit Boulevard, Birmingham, AL 35243&quot;,
+                html: &quot;&lt;strong&gt;Alabama Office&lt;/strong&gt;&lt;br&gt;217 Summit Boulevard, Birmingham, AL 35243&quot;,
+                icon: {
+                    image: &quot;assets/images/map/pin.png&quot;,
+                    iconsize: [54, 55],
+                    iconanchor: [12, 46]
+                }
+            },{
+                address: &quot;645 E. Shaw Avenue, Fresno, CA 93710&quot;,
+                html: &quot;&lt;strong&gt;California Office&lt;/strong&gt;&lt;br&gt;645 E. Shaw Avenue, Fresno, CA 93710&quot;,
+                icon: {
+                    image: &quot;assets/images/map/pin.png&quot;,
+                    iconsize: [54, 55],
+                    iconanchor: [12, 46]
+                }
+            },{
+                address: &quot;New York, NY 10017&quot;,
+                html: &quot;&lt;strong&gt;New York Office&lt;/strong&gt;&lt;br&gt;New York, NY 10017&quot;,
+                icon: {
+                    image: &quot;assets/images/map/pin.png&quot;,
+                    iconsize: [54, 55],
+                    iconanchor: [12, 46]
+                }
+            }],
+            latitude: 37.09024,
+            longitude: -95.71289,
+            zoom: 3
+        });
+    &lt;/script&gt;
+    
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</section>
+
+
+
+<section id="add_section_6" style="padding-top: 30px;">
+<div class="page-header"><h3>Features</h3><hr class="notop"></div>
+	<div class="container">
+
+		<table class="table table-bordered">
+		  <thead>
+			<tr>
+			  <th>Class / Attributes</th>
+			  <th>Features Text</th>
+			  <th>Example Code</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <td>
+			  <code>data-plugin-masonry</code><br>
+			  </td>
+			  <td>
+			  	Add this attribute in List tag as showen in code.
+			  </td>
+			  <td>
+<pre class="nobottommargin" style="height: 100px; overflow: auto;">
+&lt;ul class=&quot;clearfix full-width&quot; data-plugin-masonry&gt;
+
+    &lt;li class=&quot;col-md-4&quot;&gt;
+        Content Here
+    &lt;/li&gt;
+
+    &lt;li class=&quot;col-md-4&quot;&gt;
+        Content Here
+    &lt;/li&gt;
+
+    &lt;li class=&quot;col-md-4&quot;&gt;
+        Content Here
+    &lt;/li&gt;
+
+    &lt;li class=&quot;col-md-4&quot;&gt;
+        Content Here
+    &lt;/li&gt;
+
+    &lt;li class=&quot;col-md-4&quot;&gt;
+        Content Here
+    &lt;/li&gt;
+
+    &lt;li class=&quot;col-md-4&quot;&gt;
+        Content Here
+    &lt;/li&gt;
+
+&lt;/ul&gt;
+</pre>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td>
+			  <code>owl-carousel</code><br>
+			  <code>owl-theme</code><br><br>
+			  <code>owl-nav-left</code><br>
+			  <code>owl-nav-right</code><br>
+			  <code>owl-nav-wide</code><br>
+			  </td>
+			  <td>
+			  	Full html code for OWL Slider
+			  </td>
+			  <td>
+<pre class="nobottommargin" style="height: 100px; overflow: auto;">
+&lt;div class=&quot;owl-carousel owl-theme owl-nav-left&quot; data-plugin-options=&quot;{'responsive': {'0': {'items': 2}, '479': {'items': 3}, '768': {'items': 4}, '979': {'items': 5}, '1199': {'items': 6}}, 'margin': 30, 'loop': false, 'nav': false, 'dots': true}&quot;&gt;
+
+    &lt;div&gt;
+        Content Here
+    &lt;/div&gt;
+
+    &lt;div&gt;
+        Content Here
+    &lt;/div&gt;
+
+    &lt;div&gt;
+        Content Here
+    &lt;/div&gt;
+
+    &lt;div&gt;
+        Content Here
+    &lt;/div&gt;
+
+    &lt;div&gt;
+        Content Here
+    &lt;/div&gt;
+
+    &lt;div&gt;
+        Content Here
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</pre>
+			  </td>
+			</tr>
+			<tr>
+			  <td>
+			  <code>data-fancybox</code><br>
+			  </td>
+			  <td>
+			  	Add this attribute for popup fancy box
+			  </td>
+			  <td>
+<pre class="nobottommargin" style="height: 100px; overflow: auto;">
+&lt;a data-fancybox href=&quot;assets/images/video-thumb.jpg&quot;&gt;
+    &lt;img src=&quot;assets/images/video-thumb.jpg&quot;&gt;
+&lt;/a&gt;
+</pre>
+			  </td>
+			</tr>
+		   </tbody>
+		</table>
+	</div>
+</section>
+
+
+
+<section id="add_section_7" style="padding-top: 30px;">
+<div class="page-header"><h3>Utility</h3><hr class="notop"></div>
+	<div class="container">
+
+		<table class="table table-bordered">
+		  <thead>
+			<tr>
+			  <th>Purpose</th>
+			  <th>Class / Attributes</th>
+			  <th>Features Text</th>
+			  <th>Example Code</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <td>Margin 1 to 100</td>
+			  <td>
+			  	All Sides <br>
+			  <code>m-100</code><br><br>
+
+			  	Different Sides <br>
+			  <code>m-top-100</code>, <code>m-right-100</code>, <code>m-bottom-100</code>, <code>m-left-100</code><br><br>
+
+			  Different Screens <br>
+			  <code>m-100-lg</code>,
+			  <code>m-100-md</code>,
+			  <code>m-100-sm</code>
+			  </td>
+			  <td>
+			  	Use classes for different screens <br><br>
+			  	<code>-lg</code> Large, <code>-md</code> Medium, <code>-sm</code> Small<br><br>
+			  </td>
+			  <td width="300">
+<pre class="nobottommargin">
+&lt;h1 class=&quot;m-50 m-30-lg m-20-md m-10-sm&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td>Padding 1 to 100</td>
+			  <td>
+			  	All Sides <br>
+			  <code>p-100</code><br><br>
+
+			  	Different Sides <br>
+			  <code>p-top-100</code>, <code>p-right-100</code>, <code>p-bottop-100</code>, <code>p-left-100</code><br><br>
+
+			  Different Screens <br>
+			  <code>p-100-lg</code>,
+			  <code>p-100-md</code>,
+			  <code>p-100-sm</code>
+			  </td>
+			  <td>
+			  	Use classes for different screens <br><br>
+			  	<code>-lg</code> Large, <code>-md</code> Medium, <code>-sm</code> Small<br><br>
+			  </td>
+			  <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;p-50 p-30-lg p-20-md p-10-sm&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td>Border Radius 1 to 100</td>
+			  <td>
+			  	All Sides <br>
+			  <code>rounded-10</code><br><br>
+
+			  Different Screens <br>
+			  <code>rounded-100-lg</code>,
+			  <code>rounded-100-md</code>,
+			  <code>rounded-100-sm</code>
+			  </td>
+			  <td>
+			  	Use classes for different screens <br><br>
+			  	<code>-lg</code> Large, <code>-md</code> Medium, <code>-sm</code> Small<br><br>
+			  </td>
+			  <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;rounded-50 rounded-30-lg rounded-20-md rounded-10-sm&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td>Font Size 1 to 500</td>
+			  <td>
+			  <code>text-size-10</code><br><br>
+
+			  Different Screens <br>
+			  <code>text-size-100-lg</code>,
+			  <code>text-size-100-md</code>,
+			  <code>text-size-100-sm</code>
+			  </td>
+			  <td>
+			  	Use classes for different screens <br><br>
+			  	<code>-lg</code> Large, <code>-md</code> Medium, <code>-sm</code> Small<br><br>
+			  </td>
+			  <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;text-size-50 text-size-30-lg text-size-20-md text-size-10-sm&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td>Line Height 1 to 500</td>
+			  <td>
+			  <code>line-height-10</code><br><br>
+
+			  Different Screens <br>
+			  <code>line-height-100-lg</code>,
+			  <code>line-height-100-md</code>,
+			  <code>line-height-100-sm</code>
+			  </td>
+			  <td>
+			  	Use classes for different screens <br><br>
+			  	<code>-lg</code> Large, <code>-md</code> Medium, <code>-sm</code> Small<br><br>
+			  </td>
+			  <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;line-height-50 line-height-30-lg line-height-20-md line-height-10-sm&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td>Width in % 1 to 100</td>
+			  <td>
+			  <code>w-10</code><br><br>
+
+			  Different Screens <br>
+			  <code>w-100-lg</code>,
+			  <code>w-100-md</code>,
+			  <code>w-100-sm</code>
+			  </td>
+			  <td>
+			  	Use classes for different screens <br><br>
+			  	<code>-lg</code> Large, <code>-md</code> Medium, <code>-sm</code> Small<br><br>
+			  </td>
+			  <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;w-50 w-30-lg w-20-md w-10-sm&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td>Width 1 to 500</td>
+			  <td>
+			  <code>width-10</code><br><br>
+
+			  Different Screens <br>
+			  <code>width-100-lg</code>,
+			  <code>width-100-md</code>,
+			  <code>width-100-sm</code>
+			  </td>
+			  <td>
+			  	Use classes for different screens <br><br>
+			  	<code>-lg</code> Large, <code>-md</code> Medium, <code>-sm</code> Small<br><br>
+			  </td>
+			  <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;width-50 width-30-lg width-20-md width-10-sm&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td>Min Width 1 to 500</td>
+			  <td>
+			  <code>min-width-10</code><br><br>
+
+			  Different Screens <br>
+			  <code>min-width-100-lg</code>,
+			  <code>min-width-100-md</code>,
+			  <code>min-width-100-sm</code>
+			  </td>
+			  <td>
+			  	Use classes for different screens <br><br>
+			  	<code>-lg</code> Large, <code>-md</code> Medium, <code>-sm</code> Small<br><br>
+			  </td>
+			  <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;min-width-50 min-width-30-lg min-width-20-md min-width-10-sm&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td>Max Width 1 to 500</td>
+			  <td>
+			  <code>max-width-10</code><br><br>
+
+			  Different Screens <br>
+			  <code>max-width-100-lg</code>,
+			  <code>max-width-100-md</code>,
+			  <code>max-width-100-sm</code>
+			  </td>
+			  <td>
+			  	Use classes for different screens <br><br>
+			  	<code>-lg</code> Large, <code>-md</code> Medium, <code>-sm</code> Small<br><br>
+			  </td>
+			  <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;max-width-50 max-width-30-lg max-width-20-md max-width-10-sm&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+			  </td>
+			</tr>
+
+            <tr>
+              <td>Height 1 to 500</td>
+              <td>
+              <code>width-10</code><br><br>
+
+              Different Screens <br>
+              <code>width-100-lg</code>,
+              <code>width-100-md</code>,
+              <code>width-100-sm</code>
+              </td>
+              <td>
+                Use classes for different screens <br><br>
+                <code>-lg</code> Large, <code>-md</code> Medium, <code>-sm</code> Small<br><br>
+              </td>
+              <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;width-50 width-30-lg width-20-md width-10-sm&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Min Height 1 to 500</td>
+              <td>
+              <code>min-height-10</code><br><br>
+
+              Different Screens <br>
+              <code>min-height-100-lg</code>,
+              <code>min-height-100-md</code>,
+              <code>min-height-100-sm</code>
+              </td>
+              <td>
+                Use classes for different screens <br><br>
+                <code>-lg</code> Large, <code>-md</code> Medium, <code>-sm</code> Small<br><br>
+              </td>
+              <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;min-height-50 min-height-30-lg min-height-20-md min-height-10-sm&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Max Height 1 to 500</td>
+              <td>
+              <code>max-height-10</code><br><br>
+
+              Different Screens <br>
+              <code>max-height-100-lg</code>,
+              <code>max-height-100-md</code>,
+              <code>max-height-100-sm</code>
+              </td>
+              <td>
+                Use classes for different screens <br><br>
+                <code>-lg</code> Large, <code>-md</code> Medium, <code>-sm</code> Small<br><br>
+              </td>
+              <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;max-height-50 max-height-30-lg max-height-20-md max-height-10-sm&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Opacity 1 to 10</td>
+              <td>
+              <code>opacity-5</code><br><br>
+              </td>
+              <td>
+              	Use Opacity 1 to 10
+              </td>
+              <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;opacity-5&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Box Shadow 1 to 5</td>
+              <td>
+              <code>box-shadow-1</code><br><br>
+              <code>box-shadow-1-hover</code><br><br>
+              </td>
+              <td>
+              	Use box shadow for satic view and hover view
+              </td>
+              <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;box-shadow-1 box-shadow-3-hover&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Backgrounds 1 to 9</td>
+              <td>
+              <code>bg-light-1</code> to <code>bg-light-9</code> and <code>bg-light</code><br><br>
+              <code>bg-white-1</code> to <code>bg-white-9</code> and <code>bg-white</code><br><br>
+              <code>bg-dark-1</code> to <code>bg-dark-9</code> and <code>bg-dark</code><br><br>
+              <code>bg-base-1</code> to <code>bg-base-9</code> and <code>bg-base</code><br><br>
+              <code>bg-base-dark-1</code> to <code>bg-base-dark-9</code> and <code>bg-base-dark</code><br><br>
+              <code>bg-base-gradient</code><br><br>
+              </td>
+              <td>
+              	Use different classes for different backgrounds
+              </td>
+              <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;bg-light-1&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Text Bold 100 to 900</td>
+              <td>
+              <code>text-bold-100</code><br><br>
+              </td>
+              <td>
+              	Use class to text bold
+              </td>
+              <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;text-bold-100&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Letter Spacing 1 to 10</td>
+              <td>
+              <code>text-spacing-2</code><br><br>
+              </td>
+              <td>
+              	Use letter spacing for spacing in text
+              </td>
+              <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;text-spacing-2&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Box Shadow 1 to 5</td>
+              <td>
+              <code>box-shadow-1</code><br><br>
+              <code>box-shadow-1-hover</code><br><br>
+              </td>
+              <td>
+              	Use <code>box-shadow-1</code> for Active shadow <br><br>
+              	Use <code>box-shadow-1-hover</code> for Hover shadow
+              </td>
+              <td>
+<pre class="nobottommargin">
+&lt;h1 class=&quot;box-shadow-1 box-shadow-1-hover&quot;&gt;Content Here&lt;/h1&gt;
+</pre>
+              </td>
+            </tr>
+		   </tbody>
+		</table>
+	</div>
+</section>
+
+
+<section id="add_section_3" style="padding-top: 30px;">
+<div class="page-header"><h3>Credits</h3><hr class="notop">
+<p>
+All images are only for demonstration purposes and are not included in package, however you can re-download them in sites below. images are released free of copyrights.
+</p>
+</div>
+
+<h6 class="is-text-uppercase is-font-weight-700">Scripts</h6>
+<ul>
+	<li> <a href="assets/vendors/appear/jquery.appear.min.js" target="_blank">jQuery.appear</a></li>
+	<li> <a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jQuery Easing</a></li>
+	<li> <a href="https://github.com/webpop/jquery.pin" target="_blank">jQuery.pin</a></li>
+	<li> <a href="http://stickyjs.com/" target="_blank">Sticky Plugin</a></li>
+	<li> <a href="https://github.com/marioestrada/jQuery-gMap" target="_blank">jQuery gMap</a></li>
+	<li> <a href="https://isotope.metafizzy.co/" target="_blank">Isotope</a></li>
+	<li> <a href="https://owlcarousel2.github.io/OwlCarousel2/" target="_blank">Owl Carousel</a></li>
+	<li> <a href="http://kenwheeler.github.io/slick/" target="_blank">slick js</a></li>
+	<li> <a href="http://fancyapps.com/fancybox/" target="_blank">fancyBox</a></li>
+	<li> <a href="https://innostudio.de/fileuploader/" target="_blank">FileUploader</a></li>
+	<li> <a href="https://innostudio.de/fileuploader/" target="_blank">FileUploader</a></li>
+</ul>
+</section>
+
+<h6 class="is-text-uppercase is-font-weight-700" style="font-size: 1.1em; margin-top: 30px;">Fonts</h6>
+<ul>
+	<li> <a href="http://www.google.com/webfonts" target="_blank">Google Fonts</a></li>
+
+	<li> <a href="http://fontawesome.io/" target="_blank">Icons Font-face</a></li>
+</ul>
+
+<h6 class="is-text-uppercase is-font-weight-700" style="font-size: 1.1em; margin-top: 30px;">Images</h6>
+<ul>
+	<li><a href="https://picjumbo.com/" target="_blank">picjumbo</a></li>
+	<li><a href="https://unsplash.com/" target="_blank">unsplash</a></li>
+	<li><a href="http://www.freepik.com/" target="_blank">freepik</a></li>
+	<li><a href="https://wallpaperscraft.com/" target="_blank">wallpaperscraft</a></li>
+    <li><a href="http://7-themes.com/sizes/1920x1080/3/" target="_blank">7-themes</a></li>
+</ul>
+	
+	
+
+<section id="add_section_4" style="padding-top: 30px;">
+<div class="page-header"><h3>Website Optimization Tips</h3><hr class="notop"></div>
+	
+  <p>A Fast &amp; Optimized Website has several factors which needs to be implemented in order to achieve the desired results. There are several Optimization Techniques available which will definitely affect your Website's Performance in a Positive Way &amp; we want to share a few of them with you:</p>
+  <ul>
+    <li>
+      <h4>gZip Compression &amp; Browser Caching</h4>
+      <p>This is probably one of the Most Important Techniques you should definitely implement in order to bump up your Website's Loading Speed. <strong>gZip Compression</strong> is used to compress the Files that are delivered when loading a Website. It covers HTML, CSS, Javascript &amp; Font Files along with other miscellaneous text files. Where as <strong>Browser Caching</strong> also covers Images &amp; Videos apart from including the above files. This is used to saves the Static Data in your Browser itself so that when you open the Next Pages on the Same Website, the content does not gets Downloaded again, loading the Website fast.</p>
+      <p><strong>gZip Compression</strong> &amp; <strong>Browser Caching</strong> can be enabled using the <code>.htaccess</code> File on an Apache Web Server. You can use the Codes from here: <a href="https://github.com/h5bp/html5-boilerplate/blob/master/dist/.htaccess" target="_blank">https://github.com/h5bp/html5-boilerplate/blob/master/dist/.htaccess</a> to enable these modules on your server.</p>
+    </li>
+    <li>
+      <h4>Image Compression &amp; Optimization</h4>
+      <p>We tend to use Lots of Images on our Websites but we often do not make efforts to Compress &amp; Optimize them. Remember, the Larger the Image, the more time it takes to download and therefore this slows your website loading times affecting User Experience. Your customer will leave your website if it does not load within 3-5 Seconds which adversely affects your Sales. Therefore, it is important to Resize, Optimize &amp; Compress your Images before using it on your Website. Here are some Tips which might come handy in optimizing images:</p>
+      <ul>
+        <li><strong>Resize your Images:</strong> Resize your Images before using it on your Website. Do not just Download an Image &amp; place it as it is in your Website's <code>&lt;img&gt;</code> Tag without resizing it. The size/resolution of the Image matters since it is not recommended to use an Image size of <code>1200px</code> x <code>800px</code> in a Content Size of <code>300px</code> x <code>200px</code> as this is unnecessary. Resize it to <code>300px</code> x <code>200px</code></li>
+        <li><strong>Image Formats:</strong> There are three common file types that are used for web images which are JPEG, GIF, &amp; PNG. For images with a Flat Background use <strong>JPEG</strong> images, for images with a Transparent background use <strong>PNG</strong> images and for images with Animations use <strong>GIF</strong> images.</li>
+        <li><strong>Compressing Images:</strong> Images Compression is important as it considerably reduces the size without losing the quality. There are several FREE Image Optimization Tools available to Download.<br>
+          <strong>For MAC</strong> use <a href="https://imageoptim.com/" target="_blank">ImageOptim</a><br>
+          <strong>For Windows</strong> use <a href="http://luci.criosweb.ro/riot/" target="_blank">Riot</a> for compressing JPEG Images &amp; <a href="http://pnggauntlet.com/" target="_blank">PNG Gauntlet</a> for PNG Images.</li>
+      </ul>
+    </li>
+    <li>
+      <h4>CSS &amp; jQuery Minifications</h4>
+      <p>It is also recommended that you <strong>Combine &amp; Minify</strong> all your CSS Files to a single CSS File &amp; all Javascript Files to a single JS File since <strong>Minification</strong> reduces the size of the File and <strong>Combining</strong> the files helps in reducing the number of HTTP requests made to the server. This is also an Important Factor in increasing the speed of your website. There are several tools available online to Minify your CSS &amp; JS Files. Our recommendations are:<br>
+        <strong>For CSS</strong> use <a href="http://cssminifier.com/" target="_blank">CSS Minifier</a> and <strong>For Javascript</strong> use <a href="http://javascript-minifier.com/" target="_blank">Javascript Minifier</a>.</p>
+    </li>
+    <li>
+      <h4>Content Delivery Network</h4>
+      <p>You can use a <strong>CDN</strong> to further speed up your website. You can use the CDN to deliver static files of your website like CSS, JS, Images &amp; Font Files. There are several CDN Hosting Providers available on the Internet but we would recommend <a href="https://www.maxcdn.com/" target="_blank">MaxCDN</a> or <a href="http://www.cloudflare.com/" target="_blank">CloudFlare</a>. <span class="label label-danger">Note:</span> CDN setup requires Extra monthly Fees to setup, so it is completely optional &amp; according to your needs.</p>
+    </li>
+    <li>
+      <h4>Fast Web Hosting Servers</h4>
+      <p>A lot depends on your Web Hosting Servers, so it is recommended that you choose a Hosting Company/Server that provides a Reliable &amp; a Fast Hosting Service. You can check out some recommended Hosting Services here: <a href="https://anzwebhosts.com/" target="_blank">https://anzwebhosts.com/</a>.</p>
+    </li>
+  </ul>
+</section>
+
+
+<section id="add_section_8" style="padding-top: 30px;">
+<div class="page-header"><h3>Updates</h3><hr class="notop">
+<p>
+You can see this Template Updates here.
+</p>
+</div>
+
+<h6 class="is-text-uppercase is-font-weight-700">Version 1.1 / 05-April-2019</h6>
+<ul>
+	<li>CSS Update: Bootstrap v4.0.0-beta to Bootstrap v4.3.1</li>
+	<li>JS Update: Bootstrap v4.0.0-alpha.6 to Bootstrap v4.3.1</li>
+	<li>JS File Added: assets/js/popper.min.js</li>
+	<li>JS File Removed: assets/js/jquery-3.1.1.slim.min.js</li>
+	<li>CSS Class Added: text-white to Featured badge in HTML Files</li>
+	<li>CSS Fixed: Menu fixed in Mobile View</li>
+</ul>
+</section>
+	
+<hr style=" margin-top:300px;" />
+
+<footer>
+    <p>Copyright Create by 2017 made with the <a href="http://rxa.li/documenter">Documenter v1.0</a></p>
+</footer>
+
+</div><!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script>document.createElement('section');var duration='500',easing='swing';</script>
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/jquery.scrollTo.js"></script>
+<script src="assets/js/jquery.easing.js"></script>
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-min.js"></script>
+
+<script>
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/* PORTFOLIO FILTER BEGIN */
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/**
+ * Isotope v1.5.25
+ * An exquisite jQuery plugin for magical layouts
+ * http://isotope.metafizzy.co
+ *
+ * Commercial use requires one-time purchase of a commercial license
+ * http://isotope.metafizzy.co/docs/license.html
+ *
+ * Non-commercial use is licensed under the MIT License
+ *
+ * Copyright 2013 Metafizzy
+ */
+(function(a,b,c){"use strict";var d=a.document,e=a.Modernizr,f=function(a){return a.charAt(0).toUpperCase()+a.slice(1)},g="Moz Webkit O Ms".split(" "),h=function(a){var b=d.documentElement.style,c;if(typeof b[a]=="string")return a;a=f(a);for(var e=0,h=g.length;e<h;e++){c=g[e]+a;if(typeof b[c]=="string")return c}},i=h("transform"),j=h("transitionProperty"),k={csstransforms:function(){return!!i},csstransforms3d:function(){var a=!!h("perspective");if(a){var c=" -o- -moz- -ms- -webkit- -khtml- ".split(" "),d="@media ("+c.join("transform-3d),(")+"modernizr)",e=b("<style>"+d+"{#modernizr{height:3px}}"+"</style>").appendTo("head"),f=b('<div id="modernizr" />').appendTo("html");a=f.height()===3,f.remove(),e.remove()}return a},csstransitions:function(){return!!j}},l;if(e)for(l in k)e.hasOwnProperty(l)||e.addTest(l,k[l]);else{e=a.Modernizr={_version:"1.6ish: miniModernizr for Isotope"};var m=" ",n;for(l in k)n=k[l](),e[l]=n,m+=" "+(n?"":"no-")+l;b("html").addClass(m)}if(e.csstransforms){var o=e.csstransforms3d?{translate:function(a){return"translate3d("+a[0]+"px, "+a[1]+"px, 0) "},scale:function(a){return"scale3d("+a+", "+a+", 1) "}}:{translate:function(a){return"translate("+a[0]+"px, "+a[1]+"px) "},scale:function(a){return"scale("+a+") "}},p=function(a,c,d){var e=b.data(a,"isoTransform")||{},f={},g,h={},j;f[c]=d,b.extend(e,f);for(g in e)j=e[g],h[g]=o[g](j);var k=h.translate||"",l=h.scale||"",m=k+l;b.data(a,"isoTransform",e),a.style[i]=m};b.cssNumber.scale=!0,b.cssHooks.scale={set:function(a,b){p(a,"scale",b)},get:function(a,c){var d=b.data(a,"isoTransform");return d&&d.scale?d.scale:1}},b.fx.step.scale=function(a){b.cssHooks.scale.set(a.elem,a.now+a.unit)},b.cssNumber.translate=!0,b.cssHooks.translate={set:function(a,b){p(a,"translate",b)},get:function(a,c){var d=b.data(a,"isoTransform");return d&&d.translate?d.translate:[0,0]}}}var q,r;e.csstransitions&&(q={WebkitTransitionProperty:"webkitTransitionEnd",MozTransitionProperty:"transitionend",OTransitionProperty:"oTransitionEnd otransitionend",transitionProperty:"transitionend"}[j],r=h("transitionDuration"));var s=b.event,t=b.event.handle?"handle":"dispatch",u;s.special.smartresize={setup:function(){b(this).bind("resize",s.special.smartresize.handler)},teardown:function(){b(this).unbind("resize",s.special.smartresize.handler)},handler:function(a,b){var c=this,d=arguments;a.type="smartresize",u&&clearTimeout(u),u=setTimeout(function(){s[t].apply(c,d)},b==="execAsap"?0:100)}},b.fn.smartresize=function(a){return a?this.bind("smartresize",a):this.trigger("smartresize",["execAsap"])},b.Isotope=function(a,c,d){this.element=b(c),this._create(a),this._init(d)};var v=["width","height"],w=b(a);b.Isotope.settings={resizable:!0,layoutMode:"masonry",containerClass:"isotope",itemClass:"isotope-item",hiddenClass:"isotope-hidden",hiddenStyle:{opacity:0,scale:.001},visibleStyle:{opacity:1,scale:1},containerStyle:{position:"relative",overflow:"hidden"},animationEngine:"best-available",animationOptions:{queue:!1,duration:800},sortBy:"original-order",sortAscending:!0,resizesContainer:!0,transformsEnabled:!0,itemPositionDataEnabled:!1},b.Isotope.prototype={_create:function(a){this.options=b.extend({},b.Isotope.settings,a),this.styleQueue=[],this.elemCount=0;var c=this.element[0].style;this.originalStyle={};var d=v.slice(0);for(var e in this.options.containerStyle)d.push(e);for(var f=0,g=d.length;f<g;f++)e=d[f],this.originalStyle[e]=c[e]||"";this.element.css(this.options.containerStyle),this._updateAnimationEngine(),this._updateUsingTransforms();var h={"original-order":function(a,b){return b.elemCount++,b.elemCount},random:function(){return Math.random()}};this.options.getSortData=b.extend(this.options.getSortData,h),this.reloadItems(),this.offset={left:parseInt(this.element.css("padding-left")||0,10),top:parseInt(this.element.css("padding-top")||0,10)};var i=this;setTimeout(function(){i.element.addClass(i.options.containerClass)},0),this.options.resizable&&w.bind("smartresize.isotope",function(){i.resize()}),this.element.delegate("."+this.options.hiddenClass,"click",function(){return!1})},_getAtoms:function(a){var b=this.options.itemSelector,c=b?a.filter(b).add(a.find(b)):a,d={position:"absolute"};return c=c.filter(function(a,b){return b.nodeType===1}),this.usingTransforms&&(d.left=0,d.top=0),c.css(d).addClass(this.options.itemClass),this.updateSortData(c,!0),c},_init:function(a){this.$filteredAtoms=this._filter(this.$allAtoms),this._sort(),this.reLayout(a)},option:function(a){if(b.isPlainObject(a)){this.options=b.extend(!0,this.options,a);var c;for(var d in a)c="_update"+f(d),this[c]&&this[c]()}},_updateAnimationEngine:function(){var a=this.options.animationEngine.toLowerCase().replace(/[ _\-]/g,""),b;switch(a){case"css":case"none":b=!1;break;case"jquery":b=!0;break;default:b=!e.csstransitions}this.isUsingJQueryAnimation=b,this._updateUsingTransforms()},_updateTransformsEnabled:function(){this._updateUsingTransforms()},_updateUsingTransforms:function(){var a=this.usingTransforms=this.options.transformsEnabled&&e.csstransforms&&e.csstransitions&&!this.isUsingJQueryAnimation;a||(delete this.options.hiddenStyle.scale,delete this.options.visibleStyle.scale),this.getPositionStyles=a?this._translate:this._positionAbs},_filter:function(a){var b=this.options.filter===""?"*":this.options.filter;if(!b)return a;var c=this.options.hiddenClass,d="."+c,e=a.filter(d),f=e;if(b!=="*"){f=e.filter(b);var g=a.not(d).not(b).addClass(c);this.styleQueue.push({$el:g,style:this.options.hiddenStyle})}return this.styleQueue.push({$el:f,style:this.options.visibleStyle}),f.removeClass(c),a.filter(b)},updateSortData:function(a,c){var d=this,e=this.options.getSortData,f,g;a.each(function(){f=b(this),g={};for(var a in e)!c&&a==="original-order"?g[a]=b.data(this,"isotope-sort-data")[a]:g[a]=e[a](f,d);b.data(this,"isotope-sort-data",g)})},_sort:function(){var a=this.options.sortBy,b=this._getSorter,c=this.options.sortAscending?1:-1,d=function(d,e){var f=b(d,a),g=b(e,a);return f===g&&a!=="original-order"&&(f=b(d,"original-order"),g=b(e,"original-order")),(f>g?1:f<g?-1:0)*c};this.$filteredAtoms.sort(d)},_getSorter:function(a,c){return b.data(a,"isotope-sort-data")[c]},_translate:function(a,b){return{translate:[a,b]}},_positionAbs:function(a,b){return{left:a,top:b}},_pushPosition:function(a,b,c){b=Math.round(b+this.offset.left),c=Math.round(c+this.offset.top);var d=this.getPositionStyles(b,c);this.styleQueue.push({$el:a,style:d}),this.options.itemPositionDataEnabled&&a.data("isotope-item-position",{x:b,y:c})},layout:function(a,b){var c=this.options.layoutMode;this["_"+c+"Layout"](a);if(this.options.resizesContainer){var d=this["_"+c+"GetContainerSize"]();this.styleQueue.push({$el:this.element,style:d})}this._processStyleQueue(a,b),this.isLaidOut=!0},_processStyleQueue:function(a,c){var d=this.isLaidOut?this.isUsingJQueryAnimation?"animate":"css":"css",f=this.options.animationOptions,g=this.options.onLayout,h,i,j,k;i=function(a,b){b.$el[d](b.style,f)};if(this._isInserting&&this.isUsingJQueryAnimation)i=function(a,b){h=b.$el.hasClass("no-transition")?"css":d,b.$el[h](b.style,f)};else if(c||g||f.complete){var l=!1,m=[c,g,f.complete],n=this;j=!0,k=function(){if(l)return;var b;for(var c=0,d=m.length;c<d;c++)b=m[c],typeof b=="function"&&b.call(n.element,a,n);l=!0};if(this.isUsingJQueryAnimation&&d==="animate")f.complete=k,j=!1;else if(e.csstransitions){var o=0,p=this.styleQueue[0],s=p&&p.$el,t;while(!s||!s.length){t=this.styleQueue[o++];if(!t)return;s=t.$el}var u=parseFloat(getComputedStyle(s[0])[r]);u>0&&(i=function(a,b){b.$el[d](b.style,f).one(q,k)},j=!1)}}b.each(this.styleQueue,i),j&&k(),this.styleQueue=[]},resize:function(){this["_"+this.options.layoutMode+"ResizeChanged"]()&&this.reLayout()},reLayout:function(a){this["_"+this.options.layoutMode+"Reset"](),this.layout(this.$filteredAtoms,a)},addItems:function(a,b){var c=this._getAtoms(a);this.$allAtoms=this.$allAtoms.add(c),b&&b(c)},insert:function(a,b){this.element.append(a);var c=this;this.addItems(a,function(a){var d=c._filter(a);c._addHideAppended(d),c._sort(),c.reLayout(),c._revealAppended(d,b)})},appended:function(a,b){var c=this;this.addItems(a,function(a){c._addHideAppended(a),c.layout(a),c._revealAppended(a,b)})},_addHideAppended:function(a){this.$filteredAtoms=this.$filteredAtoms.add(a),a.addClass("no-transition"),this._isInserting=!0,this.styleQueue.push({$el:a,style:this.options.hiddenStyle})},_revealAppended:function(a,b){var c=this;setTimeout(function(){a.removeClass("no-transition"),c.styleQueue.push({$el:a,style:c.options.visibleStyle}),c._isInserting=!1,c._processStyleQueue(a,b)},10)},reloadItems:function(){this.$allAtoms=this._getAtoms(this.element.children())},remove:function(a,b){this.$allAtoms=this.$allAtoms.not(a),this.$filteredAtoms=this.$filteredAtoms.not(a);var c=this,d=function(){a.remove(),b&&b.call(c.element)};a.filter(":not(."+this.options.hiddenClass+")").length?(this.styleQueue.push({$el:a,style:this.options.hiddenStyle}),this._sort(),this.reLayout(d)):d()},shuffle:function(a){this.updateSortData(this.$allAtoms),this.options.sortBy="random",this._sort(),this.reLayout(a)},destroy:function(){var a=this.usingTransforms,b=this.options;this.$allAtoms.removeClass(b.hiddenClass+" "+b.itemClass).each(function(){var b=this.style;b.position="",b.top="",b.left="",b.opacity="",a&&(b[i]="")});var c=this.element[0].style;for(var d in this.originalStyle)c[d]=this.originalStyle[d];this.element.unbind(".isotope").undelegate("."+b.hiddenClass,"click").removeClass(b.containerClass).removeData("isotope"),w.unbind(".isotope")},_getSegments:function(a){var b=this.options.layoutMode,c=a?"rowHeight":"columnWidth",d=a?"height":"width",e=a?"rows":"cols",g=this.element[d](),h,i=this.options[b]&&this.options[b][c]||this.$filteredAtoms["outer"+f(d)](!0)||g;h=Math.floor(g/i),h=Math.max(h,1),this[b][e]=h,this[b][c]=i},_checkIfSegmentsChanged:function(a){var b=this.options.layoutMode,c=a?"rows":"cols",d=this[b][c];return this._getSegments(a),this[b][c]!==d},_masonryReset:function(){this.masonry={},this._getSegments();var a=this.masonry.cols;this.masonry.colYs=[];while(a--)this.masonry.colYs.push(0)},_masonryLayout:function(a){var c=this,d=c.masonry;a.each(function(){var a=b(this),e=Math.ceil(a.outerWidth(!0)/d.columnWidth);e=Math.min(e,d.cols);if(e===1)c._masonryPlaceBrick(a,d.colYs);else{var f=d.cols+1-e,g=[],h,i;for(i=0;i<f;i++)h=d.colYs.slice(i,i+e),g[i]=Math.max.apply(Math,h);c._masonryPlaceBrick(a,g)}})},_masonryPlaceBrick:function(a,b){var c=Math.min.apply(Math,b),d=0;for(var e=0,f=b.length;e<f;e++)if(b[e]===c){d=e;break}var g=this.masonry.columnWidth*d,h=c;this._pushPosition(a,g,h);var i=c+a.outerHeight(!0),j=this.masonry.cols+1-f;for(e=0;e<j;e++)this.masonry.colYs[d+e]=i},_masonryGetContainerSize:function(){var a=Math.max.apply(Math,this.masonry.colYs);return{height:a}},_masonryResizeChanged:function(){return this._checkIfSegmentsChanged()},_fitRowsReset:function(){this.fitRows={x:0,y:0,height:0}},_fitRowsLayout:function(a){var c=this,d=this.element.width(),e=this.fitRows;a.each(function(){var a=b(this),f=a.outerWidth(!0),g=a.outerHeight(!0);e.x!==0&&f+e.x>d&&(e.x=0,e.y=e.height),c._pushPosition(a,e.x,e.y),e.height=Math.max(e.y+g,e.height),e.x+=f})},_fitRowsGetContainerSize:function(){return{height:this.fitRows.height}},_fitRowsResizeChanged:function(){return!0},_cellsByRowReset:function(){this.cellsByRow={index:0},this._getSegments(),this._getSegments(!0)},_cellsByRowLayout:function(a){var c=this,d=this.cellsByRow;a.each(function(){var a=b(this),e=d.index%d.cols,f=Math.floor(d.index/d.cols),g=(e+.5)*d.columnWidth-a.outerWidth(!0)/2,h=(f+.5)*d.rowHeight-a.outerHeight(!0)/2;c._pushPosition(a,g,h),d.index++})},_cellsByRowGetContainerSize:function(){return{height:Math.ceil(this.$filteredAtoms.length/this.cellsByRow.cols)*this.cellsByRow.rowHeight+this.offset.top}},_cellsByRowResizeChanged:function(){return this._checkIfSegmentsChanged()},_straightDownReset:function(){this.straightDown={y:0}},_straightDownLayout:function(a){var c=this;a.each(function(a){var d=b(this);c._pushPosition(d,0,c.straightDown.y),c.straightDown.y+=d.outerHeight(!0)})},_straightDownGetContainerSize:function(){return{height:this.straightDown.y}},_straightDownResizeChanged:function(){return!0},_masonryHorizontalReset:function(){this.masonryHorizontal={},this._getSegments(!0);var a=this.masonryHorizontal.rows;this.masonryHorizontal.rowXs=[];while(a--)this.masonryHorizontal.rowXs.push(0)},_masonryHorizontalLayout:function(a){var c=this,d=c.masonryHorizontal;a.each(function(){var a=b(this),e=Math.ceil(a.outerHeight(!0)/d.rowHeight);e=Math.min(e,d.rows);if(e===1)c._masonryHorizontalPlaceBrick(a,d.rowXs);else{var f=d.rows+1-e,g=[],h,i;for(i=0;i<f;i++)h=d.rowXs.slice(i,i+e),g[i]=Math.max.apply(Math,h);c._masonryHorizontalPlaceBrick(a,g)}})},_masonryHorizontalPlaceBrick:function(a,b){var c=Math.min.apply(Math,b),d=0;for(var e=0,f=b.length;e<f;e++)if(b[e]===c){d=e;break}var g=c,h=this.masonryHorizontal.rowHeight*d;this._pushPosition(a,g,h);var i=c+a.outerWidth(!0),j=this.masonryHorizontal.rows+1-f;for(e=0;e<j;e++)this.masonryHorizontal.rowXs[d+e]=i},_masonryHorizontalGetContainerSize:function(){var a=Math.max.apply(Math,this.masonryHorizontal.rowXs);return{width:a}},_masonryHorizontalResizeChanged:function(){return this._checkIfSegmentsChanged(!0)},_fitColumnsReset:function(){this.fitColumns={x:0,y:0,width:0}},_fitColumnsLayout:function(a){var c=this,d=this.element.height(),e=this.fitColumns;a.each(function(){var a=b(this),f=a.outerWidth(!0),g=a.outerHeight(!0);e.y!==0&&g+e.y>d&&(e.x=e.width,e.y=0),c._pushPosition(a,e.x,e.y),e.width=Math.max(e.x+f,e.width),e.y+=g})},_fitColumnsGetContainerSize:function(){return{width:this.fitColumns.width}},_fitColumnsResizeChanged:function(){return!0},_cellsByColumnReset:function(){this.cellsByColumn={index:0},this._getSegments(),this._getSegments(!0)},_cellsByColumnLayout:function(a){var c=this,d=this.cellsByColumn;a.each(function(){var a=b(this),e=Math.floor(d.index/d.rows),f=d.index%d.rows,g=(e+.5)*d.columnWidth-a.outerWidth(!0)/2,h=(f+.5)*d.rowHeight-a.outerHeight(!0)/2;c._pushPosition(a,g,h),d.index++})},_cellsByColumnGetContainerSize:function(){return{width:Math.ceil(this.$filteredAtoms.length/this.cellsByColumn.rows)*this.cellsByColumn.columnWidth}},_cellsByColumnResizeChanged:function(){return this._checkIfSegmentsChanged(!0)},_straightAcrossReset:function(){this.straightAcross={x:0}},_straightAcrossLayout:function(a){var c=this;a.each(function(a){var d=b(this);c._pushPosition(d,c.straightAcross.x,0),c.straightAcross.x+=d.outerWidth(!0)})},_straightAcrossGetContainerSize:function(){return{width:this.straightAcross.x}},_straightAcrossResizeChanged:function(){return!0}},b.fn.imagesLoaded=function(a){function h(){a.call(c,d)}function i(a){var c=a.target;c.src!==f&&b.inArray(c,g)===-1&&(g.push(c),--e<=0&&(setTimeout(h),d.unbind(".imagesLoaded",i)))}var c=this,d=c.find("img").add(c.filter("img")),e=d.length,f="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",g=[];return e||h(),d.bind("load.imagesLoaded error.imagesLoaded",i).each(function(){var a=this.src;this.src=f,this.src=a}),c};var x=function(b){a.console&&a.console.error(b)};b.fn.isotope=function(a,c){if(typeof a=="string"){var d=Array.prototype.slice.call(arguments,1);this.each(function(){var c=b.data(this,"isotope");if(!c){x("cannot call methods on isotope prior to initialization; attempted to call method '"+a+"'");return}if(!b.isFunction(c[a])||a.charAt(0)==="_"){x("no such method '"+a+"' for isotope instance");return}c[a].apply(c,d)})}else this.each(function(){var d=b.data(this,"isotope");d?(d.option(a),d._init(c)):b.data(this,"isotope",new b.Isotope(a,this,c))});return this}})(window,jQuery);
+
+/*
+ * Isotope custom layout mode that extends masonry in order to work with percentage-sized columns
+ */
+(function(l,e){e.extend(e.Isotope.prototype,{_sloppyMasonryReset:function(){var b=this.element.width(),d=this.options.sloppyMasonry&&this.options.sloppyMasonry.columnWidth||this.$filteredAtoms.outerWidth(!0)||b;this.sloppyMasonry={cols:Math.round(b/d),columnWidth:d};b=this.sloppyMasonry.cols;for(this.sloppyMasonry.colYs=[];b--;)this.sloppyMasonry.colYs.push(0)},_sloppyMasonryLayout:function(b){var d=this,c=d.sloppyMasonry;b.each(function(){var b=e(this),a=Math.round(b.outerWidth(!0)/c.columnWidth),
+    a=Math.min(a,c.cols);if(1===a)d._sloppyMasonryPlaceBrick(b,c.colYs);else{var f=c.cols+1-a,h=[],k,g;for(g=0;g<f;g++)k=c.colYs.slice(g,g+a),h[g]=Math.max.apply(Math,k);d._sloppyMasonryPlaceBrick(b,h)}})},_sloppyMasonryPlaceBrick:function(b,d){for(var c=Math.min.apply(Math,d),e=0,a=0,f=d.length;a<f;a++)if(d[a]===c){e=a;break}this._pushPosition(b,this.sloppyMasonry.columnWidth*e,c);c+=b.outerHeight(!0);f=this.sloppyMasonry.cols+1-f;for(a=0;a<f;a++)this.sloppyMasonry.colYs[e+a]=c},_sloppyMasonryGetContainerSize:function(){return{height:Math.max.apply(Math,
+    this.sloppyMasonry.colYs)}},_sloppyMasonryResizeChanged:function(){return!0}})})(this,this.jQuery);
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/* PORTFOLIO FILTER END *******************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+</script>
+
+<script>
+//Main Function
+var Custom = function() {
+
+	// MASONRY STYLE
+	var masnoryStyle = function() {
+		var masnory;
+		return masnory = $(".masnory-container"), masnory.isotope({
+			layoutMode: "sloppyMasonry",
+			itemSelector: ".masnory-item"
+		}), $("#masnory-filter a").click(function() {
+			var filter;
+			return $(this).closest("ul").find("li").removeClass("active"), $(this).parent().addClass("active"), filter = $(this).attr("data-filter"), masnory.isotope({
+				filter: filter
+			})
+		})
+	};
+	
+	return {
+		//Custom Functions for Template Pages
+		start: function() {
+			masnoryStyle();
+		}
+	};
+
+}();
+</script>
+	
+<script>
+	jQuery(document).ready(function() {
+		Custom.start();
+	});
+</script>
+</body>
+</html>
