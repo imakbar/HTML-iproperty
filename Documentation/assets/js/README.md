@@ -91,7 +91,7 @@ examples:
 
     // control other targets
     data-toggle="modal" data-target="#foo"
-    data-toggle="collapse" data-target="#foo" data-parent="#bar"
+    data-bs-toggle="collapse" data-target="#foo" data-parent="#bar"
 
     // defined on element they control
     data-spy="scroll"

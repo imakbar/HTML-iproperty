@@ -24,11 +24,11 @@
 
             <div class="row d-flex align-items-center">
 
-                <div class="col-md-8 text-center-sm">
+                <div class="col-md-8 text-center-sm text-center-md">
                     <h3 class="text-white text-uppercase text-bold-700 m-bottom-0">My Profile</h3>
                 </div>
 
-                <div class="col-md-4 text-right text-center-sm">
+                <div class="col-md-4 text-right text-center-sm text-center-md">
                     <ol class="breadcrumb bg-white rounded-0">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item active">My Profile</li>
@@ -193,17 +193,17 @@
                                             <div class="input-group">
                                                 <div class="m-top-10">
                                                 <label class="custom-control custom-radio">
-                                                    <input id="radio1" name="i_am" type="radio" class="custom-control-input" checked="">
+                                                    <input id="radio1" name="i_am" type="radio" class="form-check-input" checked="">
                                                     <span class="custom-control-indicator"></span>
                                                     <span class="custom-control-description">Buying Agent</span>
                                                 </label>
                                                 <label class="custom-control custom-radio">
-                                                    <input id="radio2" name="i_am" type="radio" class="custom-control-input">
+                                                    <input id="radio2" name="i_am" type="radio" class="form-check-input">
                                                     <span class="custom-control-indicator"></span>
                                                     <span class="custom-control-description">Selling Agent</span>
                                                 </label>
                                                 <label class="custom-control custom-radio">
-                                                    <input id="radio3" name="i_am" type="radio" class="custom-control-input">
+                                                    <input id="radio3" name="i_am" type="radio" class="form-check-input">
                                                     <span class="custom-control-indicator"></span>
                                                     <span class="custom-control-description">Both</span>
                                                 </label>

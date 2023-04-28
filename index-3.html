@@ -36,6 +36,9 @@
     <link rel="stylesheet" href="assets/vendors/fileuploader/css/jquery.fileuploader.css" media="all">
     <link rel="stylesheet" href="assets/vendors/fileuploader/css/jquery.fileuploader-theme-thumbnails.css" media="all">
 
+    <!-- RANGE SLIDER -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/range-slider/jquery-ui.css">
+
     <!-- Begin: HTML5SHIV FOR IE8 -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -67,7 +70,7 @@
                     <div class="col-lg-2 col-md-3 col-sm-4 col-xs-2">
                         <!-- LOGO -->
                         <a class="navbar-brand logo" href="index.html">
-                            <img class="full-width max-width-130-sm" alt="iProperty" src="assets/images/logo.png">
+                            <img class="full-width max-width-130-sm max-width-130-md" alt="iProperty" src="assets/images/logo.png">
                         </a>
                         <!-- /LOGO -->
                     </div>
@@ -278,8 +281,15 @@
 
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="form-group">
+                                    <label class="text-bold-700 text-uppercase text-size-13">- Location -</label>
+                                    <input type="text" name="location" class="form-control rounded-0 bg-light-5" placeholder="Enter Location Here">
+                                </div>
+                            </div>
+        
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="form-group">
                                     <label class="text-bold-700 text-uppercase text-size-13">- Property Type -</label>
-                                    <select name="property_type_id" class="form-control rounded-0 bg-light-5">
+                                    <select name="property_type_id" class="form-select rounded-0 bg-light-5">
                                         <option>-- Property Type --</option>
                                         <option value="1">House</option>
                                         <option value="2">Plots</option>
@@ -288,72 +298,244 @@
                                     </select>
                                 </div>
                             </div>
-
+        
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <label class="text-bold-700 text-uppercase text-size-13">- Property Purpose -</label>
-                                    <select name="property_purpose_id" class="form-control rounded-0 bg-light-5">
+                                    <select name="property_purpose_id" class="form-select rounded-0 bg-light-5">
                                         <option>-- Property Purpose --</option>
                                         <option value="1">For Rent</option>
                                         <option value="2">For Sale</option>
                                     </select>
                                 </div>
                             </div>
-
-                            <div class="col-lg-4 col-md-12 col-sm-12">
-                                <div class="form-group">
-                                    <label class="text-bold-700 text-uppercase text-size-13">- Price -</label>
+        
+                            
+                        </div>
+                        
+                        <div class="collapse" id="advanced_search">
+                            
+                            <div class="row">
+                                
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="text-bold-700 text-uppercase text-size-13 d-flex justify-content-between">
+                                            <span>- Price -</span>
+                                            <span class="priceHtml"></span>
+                                        </label>
+                                        <div class="rangeSlider m-top-14" data-min="5000" data-max="7500000" data-values="[ 5000, 6500000 ]" data-html="priceHtml" data-value="priceValue" data-prefix="$" data-postfix=""></div>
+                                    </div>
+                                </div>
+                
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="text-bold-700 text-uppercase text-size-13 d-flex justify-content-between">
+                                            <span>- Bedrooms -</span>
+                                            <span class="bedroomsHtml"></span>
+                                        </label>
+                                        <div class="rangeSlider m-top-14" data-min="1" data-max="20" data-values="[ 1, 10 ]" data-html="bedroomsHtml" data-value="bedroomsValue" data-prefix="" data-postfix=""></div>
+                                    </div>
+                                </div>
+                
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="text-bold-700 text-uppercase text-size-13 d-flex justify-content-between">
+                                            <span>- Bathrooms -</span>
+                                            <span class="bathroomsHtml"></span>
+                                        </label>
+                                        <div class="rangeSlider m-top-14" data-min="1" data-max="20" data-values="[ 1, 10 ]" data-html="bathroomsHtml" data-value="bathroomsValue" data-prefix="" data-postfix=""></div>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <div class="row">
+        
+                                <div class="col-md-12">
+                                    <label class="text-bold-700 text-uppercase text-size-13 m-top-10 m-bottom-10">- Amenities -</label>
+                                </div>
+        
+                                <div class="col-md-12">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <input type="text" name="price_from" class="form-control rounded-0 bg-light-5" placeholder="Price from">
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Air conditioning</span>
+                                            </label>
                                         </div>
-                                        <div class="col-6">
-                                            <input type="text" name="price_to" class="form-control rounded-0 bg-light-5" placeholder="Price to">
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Balcony</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Bedding</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Cable TV</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Cofee pot</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Computer</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Cot</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Dishwasher</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">DVD</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Fan</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Fridge</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Grill</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Hairdryer</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Heating</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Hi-fi</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Internet</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Iron</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Juicer</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Lift</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Microwave</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Gym</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Fireplace</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Hot Tub</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-6">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Cleaning after exit</span>
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
+        
                             </div>
-
-                        </div>
-
-                        <div class="row">
-
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="form-group">
-                                    <label class="text-bold-700 text-uppercase text-size-13">- Country -</label>
-                                    <select name="country_id" class="form-control rounded-0 bg-light-5">
-                                        <option>-- Country --</option>
-                                        <option value="1">Pakistan</option>
-                                        <option value="2">USA</option>
-                                        <option value="3">United Kingdom</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="form-group">
-                                    <label class="text-bold-700 text-uppercase text-size-13">- City -</label>
-                                    <select name="city_id" class="form-control rounded-0 bg-light-5">
-                                        <option>-- City --</option>
-                                        <option value="1">Lahore</option>
-                                        <option value="2">Faisalabad</option>
-                                        <option value="3">Karachi</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="form-group">
-                                    <label class="text-bold-700 text-uppercase text-size-13">- Location -</label>
-                                    <input type="text" name="location" class="form-control rounded-0 bg-light-5" placeholder="Enter Location Here">
-                                </div>
-                            </div>
-
+        
                         </div>
 
                         <div class="row m-top-10">
                             <div class="col-md-12">
                                 <button type="submit" class="btn btn-base rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 p-top-12 p-bottom-12 p-left-20 p-right-20"><i class="fa fa-search"></i> Search</button>
+                                <a data-bs-toggle="collapse" class="btn btn-default rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 p-top-12 p-bottom-12 p-left-20 p-right-20" href="#advanced_search"><i class="fa fa-cog"></i> Search Advance</a>
                             </div>
                         </div>
 
@@ -368,143 +550,6 @@
         <div class="overlay bg-dark-2"></div>
     </div>
     <!-- End: SEARCH -
-    ################################################################## -->
-
-    <!--
-    #################################
-        - Begin: PROPERTY -
-    #################################
-    -->
-    <div class="p-top-60">
-        <div class="container">
-
-            <h2 class="text-bold-700 m-top-30 m-bottom-40">Popular Properties</h2>
-
-            <div class="row">
-
-                <!-- PROPERTY -->
-                <div class="col-lg-4 col-md-6">
-            
-                    <div class="property front-back bg-white m-bottom-30 box-shadow-2 box-shadow-3-hover border-1 border-solid border-light border-top-0 border-bottom-0">
-                        <div class="property-media overlay-wrapper">
-                            <img class="full-width" src="assets/images/property/property-1.jpg" alt="Property 1">
-                            <div class="media-data back">
-                                <div class="position-top">
-                                    <h5 class="m-top-15 m-bottom-15"><a class="text-bold-600 text-white text-base-base-hover" href="#">Beautiful Small Apartment</a></h5>
-                                    <p class="text-white m-bottom-10">253 Lake Washington, USA</p>
-                                    <ul class="icon-list list-inline text-white m-bottom-0">
-                                        <li class="list-inline-item"><i class="btn btn-white rounded-0 box-shadow-1 fa fa-bed"></i> 5 Beds</li>
-                                        <li class="list-inline-item"><i class="btn btn-white rounded-0 box-shadow-1 fa fa-tint"></i> 3 Baths</li>
-                                        <li class="list-inline-item"><i class="btn btn-white rounded-0 box-shadow-1 fa fa-expand"></i> 36,000 Sq Ft</li>
-                                    </ul>
-                                </div>
-                                <div class="position-bottom">
-                                    <div class="text-white text-size-24 pull-left"><a class="text-white text-base-hover" href="#"><i class="fa fa-heart-o"></i></a></div>
-                                    <div class="text-white text-size-18 pull-right"><i class="fa fa-camera"></i> 12</div>
-                                </div>
-                            </div>
-                            <div class="media-data front">
-                                <div class="position-top">
-                                    <div class="text-white text-size-24 pull-right"><a class="text-white text-base-hover" href="#"><i class="fa fa-heart-o"></i></a></div>
-                                </div>
-                                <div class="position-bottom">
-                                    <p class="text-white m-bottom-5">Per Month</p>
-                                    <h2 class="text-white m-bottom-15 text-bold-700">$250,000 </h2>
-                                    <div class="badge badge-dark pull-left m-right-8 p-top-8 p-right-12 p-bottom-8 p-left-12 rounded-0">Featured</div>
-                                    <div class="badge badge-white text-base pull-left p-top-8 p-right-12 p-bottom-8 p-left-12 rounded-0">For Rent</div>
-                                    <div class="text-white text-size-18 pull-right"><i class="fa fa-camera"></i> 12</div>
-                                </div>
-                            </div>
-                            <div class="overlay bg-base-gradient opacity-6"></div>
-                        </div>
-                    </div>
-            
-                </div>
-                <!-- /PROPERTY -->
-                
-                <!-- PROPERTY -->
-                <div class="col-lg-4 col-md-6">
-            
-                    <div class="property front-back bg-white m-bottom-30 box-shadow-2 box-shadow-3-hover border-1 border-solid border-light border-top-0 border-bottom-0">
-                        <div class="property-media overlay-wrapper">
-                            <img class="full-width" src="assets/images/property/property-2.jpg" alt="Property 2">
-                            <div class="media-data back">
-                                <div class="position-top">
-                                    <h5 class="m-top-15 m-bottom-15"><a class="text-bold-600 text-white text-base-base-hover" href="#">Beautiful Garaes Condo</a></h5>
-                                    <p class="text-white m-bottom-10">154 Drive, New York</p>
-                                    <ul class="icon-list list-inline text-white m-bottom-0">
-                                        <li class="list-inline-item"><i class="btn btn-white rounded-0 box-shadow-1 fa fa-bed"></i> 4 Beds</li>
-                                        <li class="list-inline-item"><i class="btn btn-white rounded-0 box-shadow-1 fa fa-tint"></i> 2 Baths</li>
-                                        <li class="list-inline-item"><i class="btn btn-white rounded-0 box-shadow-1 fa fa-expand"></i> 45,000 Sq Ft</li>
-                                    </ul>
-                                </div>
-                                <div class="position-bottom">
-                                    <div class="text-white text-size-24 pull-left"><a class="text-white text-base-hover" href="#"><i class="fa fa-heart"></i></a></div>
-                                    <div class="text-white text-size-18 pull-right"><i class="fa fa-camera"></i> 6</div>
-                                </div>
-                            </div>
-                            <div class="media-data front">
-                                <div class="position-top">
-                                    <div class="text-white text-size-24 pull-right"><a class="text-white text-base-hover" href="#"><i class="fa fa-heart"></i></a></div>
-                                </div>
-                                <div class="position-bottom">
-                                    <h2 class="text-white m-bottom-15 text-bold-700">$120,000</h2>
-                                    <div class="badge badge-white text-base pull-left p-top-8 p-right-12 p-bottom-8 p-left-12 rounded-0">For Sale</div>
-                                    <div class="text-white text-size-18 pull-right"><i class="fa fa-camera"></i> 6</div>
-                                </div>
-                            </div>
-                            <div class="overlay bg-base-gradient opacity-6"></div>
-                        </div>
-                    </div>
-            
-                </div>
-                <!-- /PROPERTY -->
-                
-                <!-- PROPERTY -->
-                <div class="col-lg-4 col-md-6">
-            
-                    <div class="property front-back bg-white m-bottom-30 box-shadow-2 box-shadow-3-hover border-1 border-solid border-light border-top-0 border-bottom-0">
-                        <div class="property-media overlay-wrapper">
-                            <img class="full-width" src="assets/images/property/property-3.jpg" alt="Property 3">
-                            <div class="media-data back">
-                                <div class="position-top">
-                                    <h5 class="m-top-15 m-bottom-15"><a class="text-bold-600 text-white text-base-base-hover" href="#">Global Land House</a></h5>
-                                    <p class="text-white m-bottom-10">110 Lake, United Kingdom</p>
-                                    <ul class="icon-list list-inline text-white m-bottom-0">
-                                        <li class="list-inline-item"><i class="btn btn-white rounded-0 box-shadow-1 fa fa-bed"></i> 6 Beds</li>
-                                        <li class="list-inline-item"><i class="btn btn-white rounded-0 box-shadow-1 fa fa-tint"></i> 3 Baths</li>
-                                        <li class="list-inline-item"><i class="btn btn-white rounded-0 box-shadow-1 fa fa-expand"></i> 65,000 Sq Ft</li>
-                                    </ul>
-                                </div>
-                                <div class="position-bottom">
-                                    <div class="text-white text-size-24 pull-left"><a class="text-white text-base-hover" href="#"><i class="fa fa-heart-o"></i></a></div>
-                                    <div class="text-white text-size-18 pull-right"><i class="fa fa-camera"></i> 14</div>
-                                </div>
-                            </div>
-                            <div class="media-data front">
-                                <div class="position-top">
-                                    <div class="text-white text-size-24 pull-right"><a class="text-white text-base-hover" href="#"><i class="fa fa-heart-o"></i></a></div>
-                                </div>
-                                <div class="position-bottom">
-                                    <p class="text-white m-bottom-5">Per Month</p>
-                                    <h2 class="text-white m-bottom-15 text-bold-700">$145,000 </h2>
-                                    <div class="badge badge-dark pull-left m-right-8 p-top-8 p-right-12 p-bottom-8 p-left-12 rounded-0">Featured</div>
-                                    <div class="badge badge-white text-base pull-left p-top-8 p-right-12 p-bottom-8 p-left-12 rounded-0">For Rent</div>
-                                    <div class="text-white text-size-18 pull-right"><i class="fa fa-camera"></i> 14</div>
-                                </div>
-                            </div>
-                            <div class="overlay bg-base-gradient opacity-6"></div>
-                        </div>
-                    </div>
-            
-                </div>
-                <!-- /PROPERTY -->
-
-            </div>
-            
-        </div>
-    </div>
-    <!-- End: PROPERTY -
     ################################################################## -->
 
     <!--
@@ -578,9 +623,9 @@
 
         <h2 class="text-bold-700 m-top-30 m-bottom-40">Newly Added</h2>
 
-        <div class="row">
+        <div>
 
-            <ul class="clearfix full-width m-bottom-40" data-plugin-masonry>
+            <ul class="row m-bottom-40" data-plugin-masonry>
 
                 <!-- PROPERTY -->
                 <li class="col-lg-4 col-md-6">
@@ -1387,19 +1432,19 @@
                                     <!-- Begin: SOCIAL -->
                                     <ul class="social-icons m-top-15 text-right">
                                         <li>
-                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-facebook"></i></a>
+                                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                                         </li>
                                         <li>
-                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-instagram"></i></a>
+                                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
                                         </li>
                                         <li>
-                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-twitter"></i></a>
+                                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li>
-                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-google-plus"></i></a>
+                                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
                                         </li>
                                         <li>
-                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
                                         </li>
                                     </ul>
                                     <!-- End: SOCIAL -->
@@ -1417,7 +1462,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="m-bottom-30">
                             
-                            <h5 class="text-bold-700 m-bottom-30 text-white text-uppercase">Recently Viewed</h5>
+                            <h5 class="text-bold-700 m-bottom-30 text-white text-uppercase">Latest Listing</h5>
 
                             <div class="row">
                                 <div class="col-md-12">
@@ -1613,6 +1658,10 @@
     <!-- FILE-UPLOADER -->
     <script src="assets/vendors/fileuploader/js/jquery.fileuploader.min.js"></script>
     <script src="assets/vendors/fileuploader/js/custom.js"></script>
+
+    <!-- RANGE SLIDER -->
+    <script src="assets/vendors/range-slider/jquery-ui.js"></script>
+    <script src="assets/vendors/range-slider/script.js"></script>
 
     <!-- THEME-CUSTOM -->
     <script src="assets/js/main.js"></script>

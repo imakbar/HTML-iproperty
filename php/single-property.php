@@ -859,169 +859,169 @@
                                 <div class="col-md-12">
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Air conditioning</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Balcony</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Bedding</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Cable TV</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Cofee pot</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Computer</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Cot</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Dishwasher</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">DVD</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Fan</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Fridge</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Grill</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Hairdryer</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Heating</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Hi-fi</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Internet</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Iron</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Juicer</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Lift</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Microwave</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Gym</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Fireplace</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Hot Tub</span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Cleaning after exit</span>
                                             </label>
@@ -1036,7 +1036,7 @@
                         <div class="row m-top-10">
                             <div class="col-md-12">
                                 <button type="submit" class="btn btn-base rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 p-top-12 p-bottom-12 p-left-20 p-right-20"><i class="fa fa-search"></i> Search</button>
-                                <a data-toggle="collapse" class="btn btn-default rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 p-top-12 p-bottom-12 p-left-20 p-right-20" href="#advanced_search"><i class="fa fa-cog"></i> Search Advance</a>
+                                <a data-bs-toggle="collapse" class="btn btn-default rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 p-top-12 p-bottom-12 p-left-20 p-right-20" href="#advanced_search"><i class="fa fa-cog"></i> Search Advance</a>
                             </div>
                         </div>
 
@@ -1090,11 +1090,11 @@
                     </div>
                     <!-- /RECENTLY VIEW -->
                     
-                    <!-- ENQUIRE FORM -->
+                    <!-- ENQUIRY FORM -->
                     <div class="row">
                         <div class="col-md-12 m-bottom-30">
                             <div class="bg-white card-body box-shadow-1">
-                                <h5 class="text-bold-700 m-bottom-10">ENQUIRE FORM</h5>
+                                <h5 class="text-bold-700 m-bottom-10">ENQUIRY FORM</h5>
                     
                                 <div class="hr dark text-left m-bottom-20">
                                     <hr class="border-3 border-double border-light border-left-0 border-top-0 border-right-0">
@@ -1126,7 +1126,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /ENQUIRE FORM -->
+                    <!-- /ENQUIRY FORM -->
                     
                     <!-- FEATURED PROPERTIES -->
                     <div class="row">

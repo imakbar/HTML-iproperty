@@ -36,6 +36,9 @@
     <link rel="stylesheet" href="assets/vendors/fileuploader/css/jquery.fileuploader.css" media="all">
     <link rel="stylesheet" href="assets/vendors/fileuploader/css/jquery.fileuploader-theme-thumbnails.css" media="all">
 
+    <!-- RANGE SLIDER -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/range-slider/jquery-ui.css">
+
     <!-- Begin: HTML5SHIV FOR IE8 -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -67,7 +70,7 @@
                     <div class="col-lg-2 col-md-3 col-sm-4 col-xs-2">
                         <!-- LOGO -->
                         <a class="navbar-brand logo" href="index.html">
-                            <img class="full-width max-width-130-sm" alt="iProperty" src="assets/images/logo.png">
+                            <img class="full-width max-width-130-sm max-width-130-md" alt="iProperty" src="assets/images/logo.png">
                         </a>
                         <!-- /LOGO -->
                     </div>
@@ -760,33 +763,26 @@
                                     </div>
                                     <hr class="border-3 border-double border-light border-left-0 border-top-0 border-right-0">
                                 </div>
-                    
-                                <div class="row">
-                                    
-                                    <div class="col-md-12">
-                                        <ul class="nav nav-tabs">
-                                            <li class="nav-item">
-                                                <a class="btn btn-base rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 m-bottom-10 active" href="#tab-1" data-toggle="tab">First Floor</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="btn btn-base rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 m-bottom-10" href="#tab-2" data-toggle="tab">Senond Floor</a>
-                                            </li>
-                                        </ul>
 
-                                        <!-- Tab panes -->
-                                        <div class="tab-content m-top-30">
-                                            <div class="tab-pane in active" id="tab-1">
-                                                <p>Nulla nec tempor pharetra, diam turpis sollicitudin ex, quis tristique orci justo et nisl. Nullam efficitur ex vel mi malesuada, sit amet maximus felis laoreet. Sed urna mauris, eleifend nec felis auctor, rhoncus dictum tellus. Integer lacinia ut justo id finibus. Proin mattis, urna in pulvinar condimentum.</p>
-                                                <img alt="..." class="full-width" src="assets/images/floors/floor-1.jpg">
-                                            </div>
-                                            <div class="tab-pane" id="tab-2">
-                                                <p>Nullam efficitur ex vel mi malesuada, sit amet maximus felis laoreet. Sed urna mauris, eleifend nec felis auctor, rhoncus dictum tellus. Integer Nulla nec tempor pharetra diam turpis sollicitudin ex, quis tristique orci justo et nisl. lacinia ut justo id finibus. Proin mattis, urna in pulvinar condimentum.</p>
-                                                <img alt="..." class="full-width" src="assets/images/floors/floor-2.jpg">
-                                            </div>
-                                        </div>
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="btn btn-base rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 m-bottom-10 active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">First Floor</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="btn btn-base rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 m-bottom-10" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Senond Floor</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                        <p>Nulla nec tempor pharetra, diam turpis sollicitudin ex, quis tristique orci justo et nisl. Nullam efficitur ex vel mi malesuada, sit amet maximus felis laoreet. Sed urna mauris, eleifend nec felis auctor, rhoncus dictum tellus. Integer lacinia ut justo id finibus. Proin mattis, urna in pulvinar condimentum.</p>
+                                        <img alt="..." class="full-width" src="assets/images/floors/floor-1.jpg">
                                     </div>
-
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                        <p>Nullam efficitur ex vel mi malesuada, sit amet maximus felis laoreet. Sed urna mauris, eleifend nec felis auctor, rhoncus dictum tellus. Integer Nulla nec tempor pharetra diam turpis sollicitudin ex, quis tristique orci justo et nisl. lacinia ut justo id finibus. Proin mattis, urna in pulvinar condimentum.</p>
+                                        <img alt="..." class="full-width" src="assets/images/floors/floor-2.jpg">
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -949,349 +945,145 @@
 
                 <!-- SIDEBAR -->
                 <div class="col-lg-4 col-md-12">
-
-                    <!-- SEARCH -->
-                    <div class="bg-white card-body box-shadow-1 m-bottom-30">
-                
-                        <div class="row">
-
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <div class="form-group">
-                                    <label class="text-bold-700 text-uppercase text-size-13">- Property Type -</label>
-                                    <select name="property_type_id" class="form-control rounded-0 bg-light-5">
-                                        <option>-- Property Type --</option>
-                                        <option value="1">House</option>
-                                        <option value="2">Plots</option>
-                                        <option value="3">Commercial</option>
-                                        <option value="4">Appartments</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <div class="form-group">
-                                    <label class="text-bold-700 text-uppercase text-size-13">- Property Purpose -</label>
-                                    <select name="property_purpose_id" class="form-control rounded-0 bg-light-5">
-                                        <option>-- Property Purpose --</option>
-                                        <option value="1">For Rent</option>
-                                        <option value="2">For Sale</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <div class="form-group">
-                                    <label class="text-bold-700 text-uppercase text-size-13">- Price -</label>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <input type="text" name="price_from" class="form-control rounded-0 bg-light-5" placeholder="Price from">
-                                        </div>
-                                        <div class="col-6">
-                                            <input type="text" name="price_to" class="form-control rounded-0 bg-light-5" placeholder="Price to">
-                                        </div>
+                    
+                    <!-- ENQUIRY FORM -->
+                    <div class="row">
+                        <div class="col-md-12 m-bottom-30">
+                            <div class="bg-white card-body p-20 box-shadow-1">
+                                <h5 class="text-bold-700 m-bottom-10">ENQUIRY FORM</h5>
+                    
+                                <div class="hr dark text-left m-bottom-20">
+                                    <hr class="border-3 border-double border-light border-left-0 border-top-0 border-right-0">
+                                    <div class="icons text-light">
+                                        <i class="fa fa-circle-o"></i>
+                                        <i class="fa fa-circle-o"></i>
+                                        <i class="fa fa-circle-o"></i>
                                     </div>
+                                    <hr class="border-3 border-double border-light border-left-0 border-top-0 border-right-0">
                                 </div>
-                            </div>
 
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <div class="form-group">
-                                    <label class="text-bold-700 text-uppercase text-size-13">- Bedrooms -</label>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <select name="bedroom_from_id" class="form-control rounded-0 bg-light-5">
-                                                <option>-- From --</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-6">
-                                            <select name="bedroom_to_id" class="form-control rounded-0 bg-light-5">
-                                                <option>-- To --</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <div class="form-group">
-                                    <label class="text-bold-700 text-uppercase text-size-13">- Bathrooms -</label>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <select name="bathroom_from_id" class="form-control rounded-0 bg-light-5">
-                                                <option>-- From --</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-6">
-                                            <select name="bathroom_to_id" class="form-control rounded-0 bg-light-5">
-                                                <option>-- To --</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="collapse" id="advanced_search">
-
-                            <div class="row">
-
-                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                <form>
                                     <div class="form-group">
-                                        <label class="text-bold-700 text-uppercase text-size-13">- Keyword -</label>
-                                        <input type="text" name="keyword" class="form-control rounded-0 bg-light-5" placeholder="Enter Keyword Here">
+                                        <input type="text" class="form-control rounded-0" placeholder="Name">
                                     </div>
-                                </div>
-
-                                <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="form-group">
-                                        <label class="text-bold-700 text-uppercase text-size-13">- Country -</label>
-                                        <select name="country_id" class="form-control rounded-0 bg-light-5">
-                                            <option>-- Country --</option>
-                                            <option value="1">Pakistan</option>
-                                            <option value="2">USA</option>
-                                            <option value="3">United Kingdom</option>
-                                        </select>
+                                        <input type="email" class="form-control rounded-0" placeholder="Email">
                                     </div>
-                                </div>
-
-                                <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="form-group">
-                                        <label class="text-bold-700 text-uppercase text-size-13">- City -</label>
-                                        <select name="city_id" class="form-control rounded-0 bg-light-5">
-                                            <option>-- City --</option>
-                                            <option value="1">Lahore</option>
-                                            <option value="2">Faisalabad</option>
-                                            <option value="3">Karachi</option>
-                                        </select>
+                                        <input type="text" class="form-control rounded-0" placeholder="Phone">
                                     </div>
-                                </div>
-
-                                <div class="col-lg-12 col-md-12 col-sm-12">
                                     <div class="form-group">
-                                        <label class="text-bold-700 text-uppercase text-size-13">- Location -</label>
-                                        <input type="text" name="location" class="form-control rounded-0 bg-light-5" placeholder="Enter Location Here">
+                                        <textarea class="form-control rounded-0" rows="4" placeholder="Message"></textarea>
                                     </div>
-                                </div>
-
-                            </div>
-
-                            <div class="row">
-
-                                <div class="col-md-12">
-                                    <h5 class="text-bold-700 text-uppercase m-top-10 m-bottom-20">Amenities</h5>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Air conditioning</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Balcony</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Bedding</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Cable TV</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Cofee pot</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Computer</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Cot</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Dishwasher</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">DVD</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Fan</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Fridge</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Grill</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Hairdryer</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Heating</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Hi-fi</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Internet</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Iron</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Juicer</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Lift</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Microwave</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Gym</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Fireplace</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Hot Tub</span>
-                                            </label>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Cleaning after exit</span>
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                I agree to the <a href="#">Terms and Conditions</a>.
                                             </label>
                                         </div>
                                     </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="row m-top-10">
-                            <div class="col-md-12">
-                                <button type="submit" class="btn btn-base rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 p-top-12 p-bottom-12 p-left-20 p-right-20"><i class="fa fa-search"></i> Search</button>
-                                <a data-toggle="collapse" class="btn btn-default rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 p-top-12 p-bottom-12 p-left-20 p-right-20" href="#advanced_search"><i class="fa fa-cog"></i> Search Advance</a>
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-base rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 p-left-15 p-right-15" value="Submit">
+                                    </div>
+                                </form>
                             </div>
                         </div>
-
                     </div>
-                    <!-- /SEARCH -->
+                    <!-- /ENQUIRY FORM -->
+                    
+                    <!-- AGENT ENQUIRY FORM -->
+                    <div class="row">
+                        <div class="col-md-12 m-bottom-30">
+                            <div class="bg-white card-body p-20 box-shadow-1">
+                                <h5 class="text-bold-700 m-bottom-10">CONTACT AGENT</h5>
+                    
+                                <div class="hr dark text-left m-bottom-20">
+                                    <hr class="border-3 border-double border-light border-left-0 border-top-0 border-right-0">
+                                    <div class="icons text-light">
+                                        <i class="fa fa-circle-o"></i>
+                                        <i class="fa fa-circle-o"></i>
+                                        <i class="fa fa-circle-o"></i>
+                                    </div>
+                                    <hr class="border-3 border-double border-light border-left-0 border-top-0 border-right-0">
+                                </div>
+                                
+                                <!-- AGENT -->
+                                <div class="agent bg-white m-bottom-10">
+        
+                                    <div class="agent-media">
+                                        <a class="d-block" href="#">
+                                            <img alt="..." class="full-width" src="assets/images/agents/agent-1.jpg">
+                                        </a>
+                                        <div class="media-data">
+                                            <div class="position-top">
+                                                <div class="badge badge-base text-white pull-left p-top-8 p-right-12 p-bottom-8 p-left-12 rounded-0">32 Properties</div>
+                                            </div>
+                                            <div class="position-bottom">
+                                                <a class="btn btn-white text-bold-600 text-spacing-5 text-size-13 pull-left line-height-18 rounded-0" href="#">
+                                                    <i class="fa fa-building-o m-right-4"></i>
+                                                    MK Builders
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="agent-section p-top-25 p-bottom-25">
+                                        <h5 class="text-uppercase text-bold-700"><a href="#" class="text-base">David Smith</a></h5>
+                                        <p>253 Lake Washington, USA</p>
+                                        <ul class="icon-list m-bottom-25">
+                                            <li><i class="btn btn-base rounded-0 fa fa-flag"></i> Buying Agent</li>
+                                            <li><i class="btn btn-base rounded-0 fa fa-envelope"></i> david@iproperty.com</li>
+                                            <li><i class="btn btn-base rounded-0 fa fa-phone"></i> (123) 456-6789</li>
+                                        </ul>
+                                        <ul class="social-icons">
+                                            <li>
+                                                <a class="btn btn-base btn-sm rounded-0" href="#"><i class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="btn btn-base btn-sm rounded-0" href="#"><i class="fa fa-instagram"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="btn btn-base btn-sm rounded-0" href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="btn btn-base btn-sm rounded-0" href="#"><i class="fa fa-google-plus"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="btn btn-base btn-sm rounded-0" href="#"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+        
+                                </div>
+                                <!-- /AGENT -->
+
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rounded-0" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control rounded-0" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rounded-0" placeholder="Phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control rounded-0" rows="4" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-base rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 p-left-15 p-right-15" value="Submit">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /AGENT ENQUIRY FORM -->
                     
                     <!-- RECENTLY VIEW -->
                     <div class="row">
                         <div class="col-md-12 m-bottom-30">
-                            <div class="bg-white card-body box-shadow-1">
+                            <div class="bg-white card-body p-20 box-shadow-1">
                                 <h5 class="text-bold-700 m-bottom-10">RECENTLY VIEWED</h5>
                     
                                 <div class="hr dark text-left m-bottom-20">
@@ -1335,48 +1127,10 @@
                     </div>
                     <!-- /RECENTLY VIEW -->
                     
-                    <!-- ENQUIRE FORM -->
-                    <div class="row">
-                        <div class="col-md-12 m-bottom-30">
-                            <div class="bg-white card-body box-shadow-1">
-                                <h5 class="text-bold-700 m-bottom-10">ENQUIRE FORM</h5>
-                    
-                                <div class="hr dark text-left m-bottom-20">
-                                    <hr class="border-3 border-double border-light border-left-0 border-top-0 border-right-0">
-                                    <div class="icons text-light">
-                                        <i class="fa fa-circle-o"></i>
-                                        <i class="fa fa-circle-o"></i>
-                                        <i class="fa fa-circle-o"></i>
-                                    </div>
-                                    <hr class="border-3 border-double border-light border-left-0 border-top-0 border-right-0">
-                                </div>
-
-                                <form>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control rounded-0" placeholder="Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control rounded-0" placeholder="Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control rounded-0" placeholder="Phone">
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea class="form-control rounded-0" rows="4" placeholder="Message"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="submit" class="btn btn-base rounded-0 text-bold-600 text-spacing-5 text-uppercase text-size-13 p-left-15 p-right-15" value="Submit">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /ENQUIRE FORM -->
-                    
                     <!-- FEATURED PROPERTIES -->
                     <div class="row">
                         <div class="col-md-12 m-bottom-30">
-                            <div class="bg-white card-body box-shadow-1">
+                            <div class="bg-white card-body p-20 box-shadow-1">
                                 <h5 class="text-bold-700 m-bottom-10">FEATURED PROPERTIES</h5>
                     
                                 <div class="hr dark text-left m-bottom-20">
@@ -1501,7 +1255,7 @@
                     <!-- PROPERTY TYPE -->
                     <div class="row">
                         <div class="col-md-12 m-bottom-30">
-                            <div class="bg-white card-body box-shadow-1">
+                            <div class="bg-white card-body p-20 box-shadow-1">
                                 <h5 class="text-bold-700 m-bottom-10">PROPERTY TYPE</h5>
                     
                                 <div class="hr dark text-left m-bottom-20">
@@ -1544,7 +1298,7 @@
                     <!-- RECENT POST -->
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="bg-white card-body box-shadow-1">
+                            <div class="bg-white card-body p-20 box-shadow-1">
                                 <h5 class="text-bold-700 m-bottom-10">RECENT POSTS</h5>
                     
                                 <div class="hr dark text-left m-bottom-20">
@@ -1648,19 +1402,19 @@
                                     <!-- Begin: SOCIAL -->
                                     <ul class="social-icons m-top-15 text-right">
                                         <li>
-                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-facebook"></i></a>
+                                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                                         </li>
                                         <li>
-                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-instagram"></i></a>
+                                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
                                         </li>
                                         <li>
-                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-twitter"></i></a>
+                                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li>
-                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-google-plus"></i></a>
+                                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
                                         </li>
                                         <li>
-                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
                                         </li>
                                     </ul>
                                     <!-- End: SOCIAL -->
@@ -1678,7 +1432,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="m-bottom-30">
                             
-                            <h5 class="text-bold-700 m-bottom-30 text-white text-uppercase">Recently Viewed</h5>
+                            <h5 class="text-bold-700 m-bottom-30 text-white text-uppercase">Latest Listing</h5>
 
                             <div class="row">
                                 <div class="col-md-12">
@@ -1874,6 +1628,10 @@
     <!-- FILE-UPLOADER -->
     <script src="assets/vendors/fileuploader/js/jquery.fileuploader.min.js"></script>
     <script src="assets/vendors/fileuploader/js/custom.js"></script>
+
+    <!-- RANGE SLIDER -->
+    <script src="assets/vendors/range-slider/jquery-ui.js"></script>
+    <script src="assets/vendors/range-slider/script.js"></script>
 
     <!-- THEME-CUSTOM -->
     <script src="assets/js/main.js"></script>

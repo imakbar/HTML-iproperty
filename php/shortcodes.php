@@ -23,11 +23,11 @@
 
             <div class="row d-flex align-items-center">
 
-                <div class="col-md-8 text-center-sm">
+                <div class="col-md-8 text-center-sm text-center-md">
                     <h3 class="text-base text-uppercase text-bold-700 m-bottom-0">Shortcodes</h3>
                 </div>
 
-                <div class="col-md-4 text-right text-center-sm">
+                <div class="col-md-4 text-right text-center-sm text-center-md">
                     <ol class="breadcrumb rounded-0 bg-base-gradient text-white">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item active">Shortcodes</li>
@@ -1217,19 +1217,19 @@
 
                     <ul class="social-icons m-bottom-15">
                         <li>
-                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-facebook"></i></a>
+                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li>
-                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-instagram"></i></a>
+                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
                         </li>
                         <li>
-                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-twitter"></i></a>
+                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-google-plus"></i></a>
+                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
                         </li>
                         <li>
-                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-linkedin"></i></a>
+                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
 
@@ -1369,19 +1369,19 @@
 
                     <ul class="social-icons m-bottom-15">
                         <li>
-                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-facebook"></i></a>
+                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li>
-                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-instagram"></i></a>
+                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
                         </li>
                         <li>
-                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-twitter"></i></a>
+                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-google-plus"></i></a>
+                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
                         </li>
                         <li>
-                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-linkedin"></i></a>
+                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
 
@@ -1478,7 +1478,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-base btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-1-1">
+                            <a class="btn btn-base btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-1-1">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1494,7 +1494,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-base btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-1-2">
+                            <a class="btn btn-base btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-1-2">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1510,7 +1510,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-base btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-1-3">
+                            <a class="btn btn-base btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-1-3">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1530,7 +1530,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-base-dark btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-2-1">
+                            <a class="btn btn-base-dark btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-2-1">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1546,7 +1546,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-base-dark btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-2-2">
+                            <a class="btn btn-base-dark btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-2-2">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1562,7 +1562,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-base-dark btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-2-3">
+                            <a class="btn btn-base-dark btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-2-3">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1582,7 +1582,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-white btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-3-1">
+                            <a class="btn btn-white btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-3-1">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1598,7 +1598,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-white btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-3-2">
+                            <a class="btn btn-white btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-3-2">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1614,7 +1614,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-white btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-3-3">
+                            <a class="btn btn-white btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-3-3">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1634,7 +1634,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-base-gradient btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-4-1">
+                            <a class="btn btn-base-gradient btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-4-1">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1650,7 +1650,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-base-gradient btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-4-2">
+                            <a class="btn btn-base-gradient btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-4-2">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1666,7 +1666,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-base-gradient btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-4-3">
+                            <a class="btn btn-base-gradient btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-4-3">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1690,7 +1690,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-primary btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-5-1">
+                            <a class="btn btn-primary btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-5-1">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1706,7 +1706,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-primary btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-5-2">
+                            <a class="btn btn-primary btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-5-2">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1722,7 +1722,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-primary btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-5-3">
+                            <a class="btn btn-primary btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-5-3">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1742,7 +1742,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-secondary btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-6-1">
+                            <a class="btn btn-secondary btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-6-1">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1758,7 +1758,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-secondary btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-6-2">
+                            <a class="btn btn-secondary btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-6-2">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1774,7 +1774,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-secondary btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-6-3">
+                            <a class="btn btn-secondary btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-6-3">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1794,7 +1794,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-success btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-7-1">
+                            <a class="btn btn-success btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-7-1">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1810,7 +1810,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-success btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-7-2">
+                            <a class="btn btn-success btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-7-2">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1826,7 +1826,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-success btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-7-3">
+                            <a class="btn btn-success btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-7-3">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1846,7 +1846,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-danger btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-8-1">
+                            <a class="btn btn-danger btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-8-1">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1862,7 +1862,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-danger btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-8-2">
+                            <a class="btn btn-danger btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-8-2">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1878,7 +1878,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-danger btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-8-3">
+                            <a class="btn btn-danger btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-8-3">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1902,7 +1902,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-warning btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-9-1">
+                            <a class="btn btn-warning btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-9-1">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1918,7 +1918,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-warning btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-9-2">
+                            <a class="btn btn-warning btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-9-2">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1934,7 +1934,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-warning btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-9-3">
+                            <a class="btn btn-warning btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-9-3">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1954,7 +1954,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-info btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-10-1">
+                            <a class="btn btn-info btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-10-1">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1970,7 +1970,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-info btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-10-2">
+                            <a class="btn btn-info btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-10-2">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -1986,7 +1986,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-info btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-10-3">
+                            <a class="btn btn-info btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-10-3">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -2006,7 +2006,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-light btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-11-1">
+                            <a class="btn btn-light btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-11-1">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -2022,7 +2022,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-light btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-11-2">
+                            <a class="btn btn-light btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-11-2">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -2038,7 +2038,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-light btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-11-3">
+                            <a class="btn btn-light btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-11-3">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -2058,7 +2058,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-dark btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-12-1">
+                            <a class="btn btn-dark btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-12-1">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -2074,7 +2074,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-dark btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-12-2">
+                            <a class="btn btn-dark btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-12-2">
                               Collapsible Group Item #1
                             </a>
                         </div>
@@ -2090,7 +2090,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-dark btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-toggle="collapse" href="#collapse-12-3">
+                            <a class="btn btn-dark btn-block text-left m-bottom-10 rounded-0 box-shadow-1" data-bs-toggle="collapse" href="#collapse-12-3">
                               Collapsible Group Item #1
                             </a>
                         </div>

@@ -24,11 +24,11 @@
 
             <div class="row d-flex align-items-center">
 
-                <div class="col-md-8 text-center-sm">
+                <div class="col-md-8 text-center-sm text-center-md">
                     <h3 class="text-white text-uppercase text-bold-700 m-bottom-0">Blog - Fullwidth</h3>
                 </div>
 
-                <div class="col-md-4 text-right text-center-sm">
+                <div class="col-md-4 text-right text-center-sm text-center-md">
                     <ol class="breadcrumb bg-white rounded-0">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item active">Blog - Fullwidth</li>
@@ -440,7 +440,7 @@
                     </div>
                     <!-- /RECENT POST -->
                     
-                    <!-- ENQUIRE FORM -->
+                    <!-- ENQUIRY FORM -->
                     <div class="row">
                         <div class="col-md-12 m-bottom-30">
                             <div class="bg-white card-body box-shadow-1">
@@ -476,7 +476,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /ENQUIRE FORM -->
+                    <!-- /ENQUIRY FORM -->
                     
                     <!-- FEATURED PROPERTIES -->
                     <div class="row">

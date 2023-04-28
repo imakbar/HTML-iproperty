@@ -27,19 +27,19 @@
                                     <!-- Begin: SOCIAL -->
                                     <ul class="social-icons m-top-15 text-right">
                                         <li>
-                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-facebook"></i></a>
+                                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                                         </li>
                                         <li>
-                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-instagram"></i></a>
+                                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
                                         </li>
                                         <li>
-                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-twitter"></i></a>
+                                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li>
-                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-google-plus"></i></a>
+                                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
                                         </li>
                                         <li>
-                                            <a class="btn btn-base rounded-0" href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a class="btn btn-base rounded-0" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
                                         </li>
                                     </ul>
                                     <!-- End: SOCIAL -->
@@ -57,7 +57,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="m-bottom-30">
                             
-                            <h5 class="text-bold-700 m-bottom-30 text-white text-uppercase">Recently Viewed</h5>
+                            <h5 class="text-bold-700 m-bottom-30 text-white text-uppercase">Latest Listing</h5>
 
                             <div class="row">
                                 <div class="col-md-12">

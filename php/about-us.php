@@ -23,11 +23,11 @@
 
             <div class="row d-flex align-items-center">
 
-                <div class="col-md-8 text-center-sm">
+                <div class="col-md-8 text-center-sm text-center-md">
                     <h3 class="text-white text-uppercase text-bold-700 m-bottom-0">About Us</h3>
                 </div>
 
-                <div class="col-md-4 text-right text-center-sm">
+                <div class="col-md-4 text-right text-center-sm text-center-md">
                     <ol class="breadcrumb bg-white rounded-0">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item active">About Us</li>
@@ -164,7 +164,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-base btn-lg text-bold-600 text-spacing-5 text-uppercase text-size-15 m-bottom-10 rounded-0 p-top-11 p-bottom-11 p-left-30 p-right-30 btn-block text-left" data-toggle="collapse" href="#collapse-1-1">
+                            <a class="btn btn-base btn-lg text-bold-600 text-spacing-5 text-uppercase text-size-15 m-bottom-10 rounded-0 p-top-11 p-bottom-11 p-left-30 p-right-30 btn-block text-left" data-bs-toggle="collapse" href="#collapse-1-1">
                               Our Values
                             </a>
                         </div>
@@ -180,7 +180,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-base btn-lg text-bold-600 text-spacing-5 text-uppercase text-size-15 m-bottom-10 rounded-0 p-top-11 p-bottom-11 p-left-30 p-right-30 btn-block text-left" data-toggle="collapse" href="#collapse-1-2">
+                            <a class="btn btn-base btn-lg text-bold-600 text-spacing-5 text-uppercase text-size-15 m-bottom-10 rounded-0 p-top-11 p-bottom-11 p-left-30 p-right-30 btn-block text-left" data-bs-toggle="collapse" href="#collapse-1-2">
                               Our Profile
                             </a>
                         </div>
@@ -196,7 +196,7 @@
                     <!-- ACCORDION -->
                     <div class="accordion">
                         <div class="accordion-header">
-                            <a class="btn btn-base btn-lg text-bold-600 text-spacing-5 text-uppercase text-size-15 m-bottom-10 rounded-0 p-top-11 p-bottom-11 p-left-30 p-right-30 btn-block text-left" data-toggle="collapse" href="#collapse-1-3">
+                            <a class="btn btn-base btn-lg text-bold-600 text-spacing-5 text-uppercase text-size-15 m-bottom-10 rounded-0 p-top-11 p-bottom-11 p-left-30 p-right-30 btn-block text-left" data-bs-toggle="collapse" href="#collapse-1-3">
                               Our View
                             </a>
                         </div>

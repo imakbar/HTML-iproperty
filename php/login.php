@@ -66,8 +66,8 @@
                                     </div>
                                     <div class="row m-top-30 m-bottom-20">
                                         <div class="col-md-6">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input">
+                                            <label class="form-check">
+                                                <input type="checkbox" class="form-check-input">
                                                 <span class="custom-control-indicator"></span>
                                                 <span class="custom-control-description">Remember</span>
                                             </label>

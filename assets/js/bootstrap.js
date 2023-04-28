@@ -1181,7 +1181,7 @@
   };
   var Selector$3 = {
     ACTIVES: '.show, .collapsing',
-    DATA_TOGGLE: '[data-toggle="collapse"]'
+    DATA_TOGGLE: '[data-bs-toggle="collapse"]'
     /**
      * ------------------------------------------------------------------------
      * Class Definition
